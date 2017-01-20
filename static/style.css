@@ -1,0 +1,44 @@
+.header-title {
+  font-weight: 200;
+  font-size: 33px;
+  color: white;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+}
+
+.header-subtitle li a span {
+  font-weight: 200;
+  font-size: 26px;
+  color: black;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-right > li > a {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.logo-divider {
+    width: 1px;
+    height: 64px;
+    display: inline-block;
+    position: relative;
+    top: 16px;
+    left: -6px;
+    margin-right:5px;
+    background-color: #fff;
+  }
+
+.subbar {
+    font-size: 19px;
+    min-height: 30px;
+}
+.subbar > li > a {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.subbar > li.active {
+  background-color: #eeeeee;
+}
