@@ -138,7 +138,7 @@
 </ul>
 <h3>Regular expressions</h3>
 <p>Regular expressions are a powerful pattern matching language that allow to search for specific patterns in a field. For instance if we wanted to find all records with a DOI-prefix 10.5281 we could use a regular expression search:</p>
-<p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=doi:%2F10.5281%5C%2F.%2B%2F"><code>doi:/10.5281\/.+/</code></a></p>
+<p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=doi:%2F10%5C.5281%5C%2F.%2B%2F"><code>doi:/10\.5281\/.+/</code></a></p>
 <p>Careful, the regular expression must match the <em>entire</em> field value. See the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-regexp-query.html#regexp-syntax">regular expression syntax</a> for further details.</p>
 <h3>Missing values</h3>
 <p>It is possible to search for records that either are missing a value or have a value in a specific field using the <code>_exists_</code> and <code>_missing_</code> field names.</p>
