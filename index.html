@@ -1344,15 +1344,15 @@ made available in Zenodo once they launched in OpenAIRE:</p>
 </h5>
 <p>We track two types of events:</p>
 <ol>
-<li>Visits of a record page</li>
-<li>Downloads of a file</li>
+<li>Visits to a record page.</li>
+<li>Downloads of a file.</li>
 </ol>
 <p>For both types of events, we track:</p>
 <ol>
-<li>If the request was made by a human, machine or a robot</li>
-<li>The country of origin of the request (based on the IP address)</li>
-<li>The referrer domain</li>
-<li>An anonymized visitor ID</li>
+<li><strong>Visitor:</strong> An anonymized visitor ID.</li>
+<li><strong>Visitor type:</strong> If the request was made by a) human, b) machine or c) robot.</li>
+<li><strong>Country:</strong> The country of origin of the request (based on the IP address).</li>
+<li><strong>Referrer:</strong> The referrer domain.</li>
 </ol>
 
         
@@ -1395,10 +1395,10 @@ made available in Zenodo once they launched in OpenAIRE:</p>
       
         
           <h5>
-  <p>What is a <em>downloaded data volume</em>?</p>
+  <p>What is <em>downloaded data volume</em>?</p>
 
 </h5>
-<p>The total data volume that has been downloaded for all files in a record by a user (human or machine), excluding double-clicks and robots. In case though, a user cancels a file download, we still count the total file size as downloaded data volume.</p>
+<p>The total data volume that has been downloaded for all files in a record by a user (human or machine), excluding double-clicks and robots. In case a user cancels a file download mid-way, we still count the total file size as fully downloaded.</p>
 
         
       
@@ -1434,10 +1434,17 @@ made available in Zenodo once they launched in OpenAIRE:</p>
   <p>How can I see the most viewed records?</p>
 
 </h5>
-<p>Any search on Zenodo allows you to sort the search results by “most viewed.”</p>
+<p>Any search on Zenodo allows you to sort the search results by "<a href="https://zenodo.org/search?sort=mostviews">most viewed</a>".</p>
 
         
       
+        
+          <h5>
+  <p>How do you track?</p>
+
+</h5>
+<p>We comply with the <a href="https://www.projectcounter.org/code-of-practice-sections/general-information/">COUNTER Code of Practice</a> as well as the <a href="https://peerj.com/preprints/26505/">Code of Practice for Research Data Usage Metrics</a> in our tracking. This means that our usage statistics can be compared with other COUNTER-compliant repositories.</p>
+
         
       
         
@@ -1544,20 +1551,13 @@ made available in Zenodo once they launched in OpenAIRE:</p>
         
       
         
-          <h5>
-  <p>How do you track?</p>
-
-</h5>
-<p>We comply with the <a href="https://www.projectcounter.org/code-of-practice-sections/general-information/">COUNTER Code of Practice</a> as well as the <a href="https://peerj.com/preprints/26505/">Code of Practice for Research Data Usage Metrics</a> in our tracking. This means that our usage statistics can be compared with other COUNTER-compliant repositories.</p>
-
-        
       
         
           <h5>
   <p>What is the difference between a machine and a robot?</p>
 
 </h5>
-<p>A machine request is an automated request initiated by a human user, e.g. a script downloading data from Zenodo and running an analysis on the data. A robot request is an automated request made by e.g. a search engine crawler.</p>
+<p>A <em>machine request</em> is an automated request initiated by a human user, e.g. a script downloading data from Zenodo and running an analysis on the data. A <em>robot request</em> is an automated request made by e.g. a search engine crawler.</p>
 
         
       
@@ -1566,18 +1566,15 @@ made available in Zenodo once they launched in OpenAIRE:</p>
   <p>How do you anonymize users?</p>
 
 </h5>
-<ul>
-<li>For each view/download event, we track an anonymized visitor ID. This anonymized visitor ID changes for a user every 24 hours, hence a user viewing the same record on two different days will have two different anonymized visitor IDs. The reason we track an anonymized visitor ID is in order to count unique views and downloads.</li>
-<li>For security purposes, we keep a web server access log which includes your IP address and your browser’s user agent string. This web server access log is automatically deleted after maximum 1-year and is also strictly separated from the usage statistics collection.</li>
-<li><p>The anonymized visitor ID is generated from a personal identifier such as:</p>
+<p>For each view/download event, we track an anonymized visitor ID. This anonymized visitor ID changes for a user every 24 hours, hence a user viewing the same record on two different days will have two different anonymized visitor IDs. The reason we track an anonymized visitor ID is in order to count unique views and downloads.</p>
+<p>For security purposes, we also keep a web server access log which includes your <a href="https://en.wikipedia.org/wiki/IP_address">IP address</a> and your browser’s <a href="https://en.wikipedia.org/wiki/User_agent">user agent</a> string. This web server access log is automatically deleted after maximum 1 year and is also strictly separated from the usage statistics collection.</p>
+<p>The anonymized visitor ID is generated from a personal identifier such as:</p>
 <ol>
-<li>a user ID</li>
-<li>a session ID</li>
-<li>or an IP address and your browser’s user-agent string</li>
+<li>a user ID (e.g. if you are logged in on zenodo.org),</li>
+<li>a session ID,</li>
+<li>or an IP address and your browser’s user-agent string.</li>
 </ol>
-<p>We combine the personal identifier with a random text value (a salt) and apply a one-way strong cryptographic hash function to scramble the data. The salt (random text value) is thrown away and regenerated every 24 hours.</p>
-</li>
-</ul>
+<p>We combine the personal identifier with a random text value (a salt) and apply a one-way <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">cryptographic hash function</a> to scramble the data. The salt (random text value) is thrown away and regenerated every 24 hours. Using and afterwards throwing away the random salt, ensures that the anonymized visitor ID is fully random.</p>
 
         
       
@@ -1595,7 +1592,8 @@ made available in Zenodo once they launched in OpenAIRE:</p>
   <p>Who do you share usage statistics with?</p>
 
 </h5>
-<p>We share aggregated usage statistics with <a href="https://www.openaire.eu/openaire-guide-for-usage-statistics">OpenAIRE Usage Statistics</a> as well as the <a href="https://github.com/datacite/sashimi">DataCite Sashimi</a> service. Note, that these are aggregated usage statistics that do not even include the anonymized visitor IDs.</p>
+<p>We share <em>aggregated</em> usage statistics with <a href="https://www.openaire.eu/openaire-guide-for-usage-statistics">OpenAIRE Usage Statistics</a> as well as the <a href="https://github.com/datacite/sashimi">DataCite Sashimi</a> service. Note, that only aggregated usage statistics is being shared, which
+do not include any anonymized visitor IDs.</p>
 
         
       
@@ -1604,7 +1602,7 @@ made available in Zenodo once they launched in OpenAIRE:</p>
   <p>What do you share with third parties?</p>
 
 </h5>
-<p>We share only aggregated usage statistics with third-parties. We never share the raw usage statistics events, even though these usage statistics events are fully anonymized.</p>
+<p>We share only <em>aggregated</em> usage statistics with third-parties. We never share the raw usage statistics events, even though these usage statistics events are fully anonymized.</p>
 
         
       
@@ -1613,7 +1611,7 @@ made available in Zenodo once they launched in OpenAIRE:</p>
   <p>How did you get usage statistics from 2013 until 2018?</p>
 
 </h5>
-<p>From 2013, we have been using a self-hosted Piwik instance to track usage statistics for zenodo.org. We were able to extract record views and downloads from this Piwik instance. Studies have however shown that Piwik fails at counting as much as 40-50% of the actual visits to a site.</p>
+<p>From 2013, we have been using a self-hosted Piwik instance to track usage statistics for zenodo.org. We were able to extract record views and downloads from this Piwik instance. <a href="https://doi.org/10.5281/zenodo.1034164">Studies</a> have however shown that Piwik fails at counting as much as 50-60% of the actual visits to a site.</p>
 
         
       
@@ -1637,7 +1635,7 @@ made available in Zenodo once they launched in OpenAIRE:</p>
       
         
           <h5>
-  <p>Do you do manual or automatic profiling of users?</p>
+  <p>Do you do any manual or automatic profiling of users?</p>
 
 </h5>
 <p>No.</p>
