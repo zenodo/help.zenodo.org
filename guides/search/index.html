@@ -104,16 +104,11 @@
 <p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=%2Btitle:%22open%20science%22%20-title:policy"><code>+title:"open science" -title:policy</code></a> or e.g. <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=title:(-open%20%2Bscience%29"><code>title:(-open +science)</code></a></p>
 <p>You can combine simple, phrase and field search to construct advanced search queries.</p>
 <h3>Range search</h3>
-<p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=publicationdate:%5B2017%20TO%202018%5D"><code>publicationdate:[2017 TO 2018]</code></a> (note, you must capitalize <code>TO</code>).</p>
+<p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=publication_date:%5B2017-01-01%20TO%202018-01-01%5D"><code>publication_date:[2017-01-01 TO 2018-01-01]</code></a> (note, you must capitalize <code>TO</code>).</p>
 <p>Results will match any record with a publication date between 2017-01-01 and 2018-01-01 (both dates inclusive).</p>
-<p>Note that, partial dates are expanded to full dates, e.g.:</p>
-<ul>
-<li>2017 is expanded to 2017-01-01</li>
-<li>2017-06 is expanded to 2017-06-01</li>
-</ul>
 <p>Use square brackets (<code>[]</code>) for <em>inclusive</em> ranges and  use curly brackets (<code>{}</code>) for <em>exclusive</em> ranges, e.g.:</p>
 <ul>
-<li><code>[2017 TO 2018}</code> is equivalent to <code>[2017-01-01 TO 2017-12-31]</code> because of date expansion and exclusive upper bound.</li>
+<li><code>[2017-01-01 TO 2018-01-01}</code> is equivalent to <code>[2017-01-01 TO 2017-12-31]</code>.</li>
 </ul>
 <p>Examples of other ranges:</p>
 <ul>
