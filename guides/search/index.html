@@ -178,7 +178,7 @@ of what each data type means and what is possible.</p>
 <td></td>
 </tr>
 <tr>
-<td><code>accessrights</code></td>
+<td><code>access_right</code></td>
 <td>CV</td>
 <td>See "Access rights (CV)" below.</td>
 <td></td>
@@ -562,6 +562,12 @@ of what each data type means and what is possible.</p>
 <td></td>
 </tr>
 <tr>
+<td><code>related.relation</code></td>
+<td>CV</td>
+<td>See "Relations (CV)" below.</td>
+<td></td>
+</tr>
+<tr>
 <td><code>relations.version.count</code></td>
 <td>integer</td>
 <td>Number of versions of record.</td>
@@ -623,6 +629,7 @@ of what each data type means and what is possible.</p>
 </tbody>
 </table>
 <h4>Resource types (CV)</h4>
+<p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=resource_type.type:software"><code>resource_type.type:software</code></a></p>
 <ul>
 <li><code>publication</code></li>
 <li><code>poster</code></li>
@@ -635,6 +642,7 @@ of what each data type means and what is possible.</p>
 <li><code>other</code></li>
 </ul>
 <h4>Access rights (CV)</h4>
+<p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=access_right:closed"><code>access_right:closed</code></a></p>
 <ul>
 <li><code>open</code> - Open access (see field also <code>license</code>).</li>
 <li><code>closed</code> - Closed access (access to files only by owner).</li>
@@ -642,6 +650,7 @@ of what each data type means and what is possible.</p>
 <li><code>restricted</code> - Restricted access (see also  field <code>access_conditions</code>).</li>
 </ul>
 <h4>Identifier schemes (CV)</h4>
+<p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=related.scheme:ads"><code>related.scheme:ads</code></a></p>
 <ul>
 <li><code>ads</code></li>
 <li><code>ark</code></li>
@@ -667,6 +676,7 @@ of what each data type means and what is possible.</p>
 <li><code>urn</code></li>
 </ul>
 <h4>Relations (CV)</h4>
+<p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=related.relation:cites"><code>related.relation:cites</code></a></p>
 <ul>
 <li><code>cites</code></li>
 <li><code>compiles</code></li>
@@ -695,6 +705,7 @@ of what each data type means and what is possible.</p>
 <li><code>reviews</code></li>
 </ul>
 <h4>Contributor types (CV)</h4>
+<p><strong>Example:</strong> <a href="https://zenodo.org/search?page=1&amp;size=20&amp;q=contributors.type:ContactPerson"><code>contributors.type:ContactPerson</code></a></p>
 <ul>
 <li><code>ContactPerson</code></li>
 <li><code>DataCollector</code></li>
