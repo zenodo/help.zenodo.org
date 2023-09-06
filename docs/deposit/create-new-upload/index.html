@@ -1,0 +1,526 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<meta property="og:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
+
+
+<meta property="og:title" content="Zenodo - Research. Shared." />
+
+
+<meta property="og:type" content="website" />
+
+
+<meta property="og:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@zenodo_org" />
+<meta name="twitter:creator" content="@zenodo_org" />
+
+<meta name="twitter:title" content="Zenodo - Research. Shared." />
+
+
+
+<meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
+
+<meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
+<link rel="stylesheet" href="../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../static/style.css">
+<link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
+<title>Zenodo</title>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="https://zenodo.org"><img class="navbar-brand" src="/static/img/zenodo.svg" alt="Zenodo" /></a>
+          <span class="logo-divider"></span>
+          <span class="header-title" aria-label="header-title">Documentation</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right toplist">
+            
+              <li><a href="https://about.zenodo.org">About</a></li>
+            
+              <li><a href="https://blog.zenodo.org">Blog</a></li>
+            
+              <li><a href="https://help.zenodo.org">Help</a></li>
+            
+              <li><a href="https://about.zenodo.org/projects">Projects</a></li>
+            
+              <li><a href="https://developers.zenodo.org">Developers</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="communities">
+    
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 nav navbar-nav navbar subbar">
+            
+
+
+  
+  <li><a href="../../../">Help</a></li>
+
+  
+  <li><a href="../../../faq/">FAQ</a></li>
+
+  
+  <li class="active"><a href="../../">Docs</a></li>
+
+  
+  <li><a href="../../../guides/">Guides</a></li>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container body-container">
+      <div class="row">
+        <div class="col-md-12">
+          
+
+<div class="row">
+    <div class="col-md-4">
+        
+<div class="panel panel-default">
+  <div class="panel-heading"><strong><a href="../">Deposit</a></strong></div>
+  <div class="list-group">
+          
+          <a href="./" class="list-group-item active"">Create new upload</a>
+          
+          <a href="../describe-records/" class="list-group-item"">Describe records</a>
+          
+          <a href="../manage-files/" class="list-group-item"">Manage files</a>
+  </div>
+</div>
+
+    </div>
+    <div class="col-md-8">
+      
+<ol class="breadcrumb">
+    <li><a href="../../">Docs</a></li>
+    
+    <li><a href="../">Deposit</a></li>
+    
+    
+    <li>Create new upload</li>
+    
+    
+</ol>
+
+      <div class="docs-blocks">
+      <h1>Create new upload</h1>
+      
+      <hr />
+      <div class="alert alert-info" role="alert"><strong>Want to test Zenodo?</strong> Use our sandbox environment on <a href="https://sandbox.zenodo.org">https://sandbox.zenodo.org</a> to play.</div><p>See the <a href="../../get-started/quickstart/">quick start</a> guide for a short introduction to publishing an upload in 3 simple steps. This guide goes in further detail about how to create a new record, and subsequent sections covers each part in detail.</p>
+
+      
+      <ul>
+        
+        
+        <li><a href="#new-upload">Create a new upload</a></li>
+        
+        
+        
+        
+        <li><a href="#files">Add/remove files</a></li>
+        
+        
+        
+        
+        <li><a href="#metadata">Fill in metadata</a></li>
+        
+        
+        
+        
+        
+        
+        
+        
+        <li><a href="#save">Save for later</a></li>
+        
+        
+        
+        
+        
+        <li><a href="#visibility">Set visibility</a></li>
+        
+        
+        
+        
+        <li><a href="#embargo">Apply an embargo</a></li>
+        
+        
+        
+        
+        
+        <li><a href="#preview">Preview before publishing</a></li>
+        
+        
+        
+        <li><a href="#publish">Publish</a></li>
+        
+        
+        
+        
+        <li><a href="#delete">Delete a  draft</a></li>
+        
+        
+        
+        
+      </ul>
+      
+        
+
+
+<ul>
+</ul>
+        <h3 id="new-upload" class="docs">Create a new upload <small><a href="#new-upload" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click the plus icon in the header, and select <strong>New upload</strong> from the drop-down menu. S</p>
+
+        
+            <p><img src="create-new-upload.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>You will now see the deposit form where you can upload files, add metadata, set restrictions and save/publish your upload.</p>
+
+        
+            <p><img src="deposit-form.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="files" class="docs">Add/remove files <small><a href="#files" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click the <strong>Upload files</strong> button, or drag and drop one or more files onto the drop zone to start uploading files. By default, you can maximum upload up to 100 files and a total of 50GB.</p>
+<p><strong>ATTENTION:</strong> After the record is published it is not longer possible to add, remove or modify files by yourself.</p>
+
+        
+            <p><img src="files-empty.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>You can delete a file by clicking the trashcan-icon.</p>
+
+        
+            <p><img src="files.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="metadata" class="docs">Fill in metadata <small><a href="#metadata" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Fill in the minimal required metadata fields under "Basic information". The fields are marked with a small red star. Refer to <a href="../describe-records/">describe records</a> for a detailed guide to all fields in the form.</p>
+
+        
+            <p><img src="basic-information.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Digital Object Identifier (DOI)</strong>: If your upload already has a DOI, please answer "yes" to the question and copy/paste the existing DOI. Note, make sure the existing DOI is for the same object. For instance, if you upload a supporting dataset to a journal article, you should NOT use the journal article DOI.</p>
+<p>If your upload does not have a DOI, answer "no" to the question. The "Get a DOI now!" button allows you to reserve a DOI, so you can include it into the files you upload if so desired (e.g. to include the DOI into a PDF). ATTENTION: If you delete the draft upload, the reserved DOI will be lost.</p>
+<p>The DOI will only be registered once the record is published.</p>
+
+        
+            <p><img src="doi.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Resource type</strong>: Select the type of resource you have uploaded (e.g publication, dataset, software, poster, presentation, ...). For mixed type uploads, choose the type which you think best reflects the nature of the upload.</p>
+
+        
+            <p><img src="resource-type.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">4</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Title</strong>: Provide a clear and informative title for your upload.</p>
+
+        
+            <p><img src="titles.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">5</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Publication date</strong>: Provide the publication date of your upload. The publication date is when your upload was first published (made available to a public audience). By default, the publication date is set to the date you create the draft upload.</p>
+
+        
+            <p><img src="publicationdate.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">6</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Creators</strong>: Click the <strong>Add creator</strong> button to add one or more creators/authors of the record. Creators appear in the citation string of your upload. A creator can be a person or organisation. You can search for creators (based on ORCiD profiles for persons and ROR registry for organisations), or you can manually enter their information. Name identifiers (e.g. ORCIDs, GNDs) are validated. You can add one or more affiliations for a creator, and if desired you can assign a role for each creator. Once one or more authors have been added, you can edit, remove and reorder creators from the deposit form.</p>
+
+        
+            <p><img src="creators.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="save" class="docs">Save for later <small><a href="#save" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click <strong>Save draft</strong> to save your deposit and validate the entered data.</p>
+
+        
+            <p><img src="save-for-later.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Any error message will be displayed on the top.</p>
+
+        
+            <p><img src="form-errors.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>Once saved, you can close the browser window and come back later to complete the upload. See <a href="../manage-records/">manage records</a> for how to find you upload again.</p>
+
+        
+    </div>
+</div>
+        <h3 id="visibility" class="docs">Set visibility <small><a href="#visibility" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Set the desired visibility of the <strong>files</strong> in the record once published (note, the metadata is always publicly accessible).</p>
+
+        
+            <p><img src="visibility.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>You can choose between <strong>public</strong> or <strong>restricted</strong> visibility for the files. If the files are restricted you can later set an embargo date and share the record with specific users.</p>
+
+        
+    </div>
+</div>
+        <h3 id="embargo" class="docs">Apply an embargo <small><a href="#embargo" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Set the files visibility to <strong>restricted</strong> and check the <strong>Apply an embargo</strong>.</p>
+
+        
+            <p><img src="embargo.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Provide an <strong>Embargo until</strong> date. The files will automatically be made publicly available on the chosen date at midnight UTC. Optionally, provide a reason for the embargo.</p>
+
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>Users viewing the record landing page will be made aware of the embargo period.</p>
+
+        
+    </div>
+</div>
+        <h3 id="preview" class="docs">Preview before publishing <small><a href="#preview" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click the <strong>Preview</strong> button to see how the record will look like once published. Note, you have to provide the minimal required metadata (see above) to be able to preview the record.</p>
+
+        
+            <p><img src="save-for-later.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="publish" class="docs">Publish <small><a href="#publish" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click <strong>Publish</strong> once you are ready to publish.</p>
+
+        
+            <p><img src="save-for-later.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Confirm that you wish to publish. ATTENTION: Once published, you can no longer change the files. You can always update/edit the metadata of the record.</p>
+
+        
+            <p><img src="publish.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="delete" class="docs">Delete a  draft <small><a href="#delete" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>At any point before publishing, you can delete the draft upload by clicking the <strong>Delete</strong> button.</p>
+
+        
+            <p><img src="delete.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>ATTENTION:</strong> You will loose any reserved DOI if you delete the upload, and any uploaded files will also be removed.</p>
+
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>After you publish, you will NOT be able to delete the record by yourself.</p>
+
+        
+    </div>
+</div>
+      </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <footer class="footer">
+    <div class="menu-wrapper">
+      <div class="container">
+        <div class="row footer-menu">
+          <div class="col-xs-12 col-md-8">
+            <div class="row">
+              <div class="col-xs-2 col-md-2">
+                <h5>About</h5>
+                <ul class="list-unstyled">
+                  <li><a href="http://about.zenodo.org">About</a></li>
+                  <li><a href="http://about.zenodo.org/policies/">Policies</a></li>
+                  <li><a href="http://about.zenodo.org/infrastructure/">Infrastructure</a></li>
+                  <li><a href="http://about.zenodo.org/principles/">Principles</a></li>
+                  <li><a href="http://about.zenodo.org/roadmap/">Roadmap</a></li>
+                  <li><a href="http://about.zenodo.org/projects/">Projects</a></li>
+                  <li><a href="http://about.zenodo.org/contact/">Contract</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-2 col-md-2">
+                <h5>Blog</h5>
+                <ul class="list-unstyled">
+                  <li><a href="https://blog.zenodo.org">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-2 col-md-2">
+                <h5>Help</h5>
+                <ul class="list-unstyled">
+                  <li><a href="https://help.zenodo.org">Overview</a></li>
+                  <li><a href="https://help.zenodo.org/faq/">FAQ</a></li>
+                  <li><a href="https://help.zenodo.org/guides/">Guides</a></li>
+                  <li><a href="https://zenodo.org/support">Support</a></li>
+              </div>
+              <div class="col-xs-2 col-md-2">
+                <h5>Developers</h5>
+                <ul class="list-unstyled">
+                <li><a href="https://developers.zenodo.org">REST API</a></li>
+                <li><a href="https://developers.zenodo.org#oai-pmh">OAI-PMH</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-2 col-md-2">
+                <h5>Contribute</h5>
+                <ul class="list-unstyled">
+                  <li><a href="https://github.com/zenodo/zenodo"><i class="fa fa-external-link"></i> GitHub</a></li>
+                  <li><a href="https://zenodo.org/donate"><i class="fa fa-external-link"></i> Donate</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="pull-right-md text-center-sm text-center-xs">
+              <h5>Funded by</h5>
+              <ul class="list-inline">
+                <li><a href="https://home.cern"><img src="/static/img/cern.png" width="60" height="60" /></a></li>
+                <li><a href="https://www.openaire.eu"><img src="/static/img/openaire.png" width="80"/></a></li>
+                <li><a href="https://ec.europa.eu/programmes/horizon2020/"><img src="/static/img/eu.png" width="88" height="60" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6">
+          <div class="pull-right-sm text-center-xs">
+            <ul class="list-inline">
+              <li><a href="https://stats.uptimerobot.com/vlYOVuWgM">Status</a></li>
+              <li><a href="https://about.zenodo.org/privacy-policy">Privacy policy</a></li>
+              <li><a href="https://about.zenodo.org/terms">Terms of Use</a></li>
+              <li><a href="https://about.zenodo.org/contact">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center-xs">
+          <p><a title="Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International License." rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" height="20" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>&nbsp; Powered by <a href="https://home.cern/science/computing/data-centre">CERN Data Centre</a> &amp; <a href="http://inveniosoftware.org">Invenio</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
