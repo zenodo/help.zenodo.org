@@ -25,9 +25,9 @@
 <meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
 
 <meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
-<link rel="stylesheet" href="../static/zenodo.css">
-<link rel="stylesheet" href="../static/style.css">
-<link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../static/style.css">
+<link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
 <title>Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -40,7 +40,7 @@
         <div class="navbar-header">
           <a href="https://zenodo.org"><img class="navbar-brand" src="/static/img/zenodo.svg" alt="Zenodo" /></a>
           <span class="logo-divider"></span>
-          <span class="header-title" aria-label="header-title">Help</span>
+          <span class="header-title" aria-label="header-title">Documentation</span>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right toplist">
@@ -70,16 +70,16 @@
 
 
   
-  <li><a href="../">Help</a></li>
+  <li><a href="../../../">Help</a></li>
 
   
-  <li><a href="../faq/">FAQ</a></li>
+  <li><a href="../../../faq/">FAQ</a></li>
 
   
-  <li><a href="../docs/">Docs</a></li>
+  <li><a href="../../../docs/">Docs</a></li>
 
   
-  <li class="active"><a href="./">Guides</a></li>
+  <li class="active"><a href="../../">Guides</a></li>
 
 
           </div>
@@ -93,36 +93,47 @@
         <div class="col-md-12">
           
 
-
-
-
-<div class="docs-blocks">
-<h3>Guides</h3>
-<hr/ >
-
-
 <div class="row">
-    <div class="col-md-3">
-        <h4><a href="search/">Search guide</a></h4>
-    </div>
-    <div class="col-md-3">
-        <h4><a href="nih/">NIH Data Management and Sharing Plan Guidance</a></h4>
-        <ul>
-            <li><a href="nih/element1/">Element 1: Data Types</a></li>
-            <li><a href="nih/element2/">Element 2: Related Tools, Software and/or Code:</a></li>
-            <li><a href="nih/element3/">Element 3: Standards</a></li>
-            <li><a href="nih/element4/">Element 4: Data Preservation, Access, and Associated Timelines</a></li>
-            <li><a href="nih/element5/">Element 5: Access, Distribution, and Reuse Considerations</a></li>
-            <li><a href="nih/element6/">Element 6: Oversight of Data Management and Sharing</a></li>
-        </ul>
-    </div>
+    <div class="col-md-4">
+        
+<div class="panel panel-default">
+  <div class="panel-heading"><strong><a href="../">NIH Data Management and Sharing Plan Guidance</a></strong></div>
+  <div class="list-group">
+          
+          <a href="../element1/" class="list-group-item"">Element 1: Data Types</a>
+          
+          <a href="./" class="list-group-item active"">Element 2: Related Tools, Software and/or Code:</a>
+          
+          <a href="../element3/" class="list-group-item"">Element 3: Standards</a>
+          
+          <a href="../element4/" class="list-group-item"">Element 4: Data Preservation, Access, and Associated Timelines</a>
+          
+          <a href="../element5/" class="list-group-item"">Element 5: Access, Distribution, and Reuse Considerations</a>
+          
+          <a href="../element6/" class="list-group-item"">Element 6: Oversight of Data Management and Sharing</a>
+  </div>
 </div>
 
+    </div>
+    <div class="col-md-8">
+      
+<ol class="breadcrumb">
+    <li><a href="../../../docs/">Docs</a></li>
+</ol>
+
+      <div class="docs-blocks">
+      <h1>Element 2: Related Tools, Software and/or Code:</h1>
+      
+      <hr />
+      <h4>Background</h4>
+<p>Software and code deposits are encouraged in Zenodo. Zenodo also supports GitHub integration and archiving of GitHub repositories that have been used to generate software and analysis code for research studies. Please see the <a href="../../../docs/">Zenodo documentation</a> for more information as well as <a href="https://docs.gi.thub.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content">GitHub documentation</a>.</p>
+<h4>NIH-specific guidance on Element 2: Related Tools, Software and/or Code</h4>
+<p><strong>2.A:</strong> State whether specialized tools, software, and/or code are needed to access or manipulate shared scientific data, and if so, provide the name(s) of the needed tool(s) and software and specify how they can be accessed.</p>
+<div class="alert alert-info" role="alert"><strong>Zenodo note:</strong> The software that has been used to collect, analyze, and otherwise manipulate the data can be described in the Description field of the dataset’s deposit record. In addition, you may create a Zenodo record specifically for the software, and it can be linked to your data record using the Related Identifiers fields on the deposit form.See <a href="../../../docs/deposit/describe-records/">describing records</a> for further information.</div>
+      
+      </div>
+    </div>
 </div>
-
-
-<div class="alert alert-info" style="margin-top: 20px;">
-Couldn't find the answer to your question? <a href="https://zenodo.org/support">Contact us</a>.
 
         </div>
       </div>

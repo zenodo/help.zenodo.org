@@ -25,9 +25,9 @@
 <meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
 
 <meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
-<link rel="stylesheet" href="../static/zenodo.css">
-<link rel="stylesheet" href="../static/style.css">
-<link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../static/style.css">
+<link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
 <title>Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -40,7 +40,7 @@
         <div class="navbar-header">
           <a href="https://zenodo.org"><img class="navbar-brand" src="/static/img/zenodo.svg" alt="Zenodo" /></a>
           <span class="logo-divider"></span>
-          <span class="header-title" aria-label="header-title">Help</span>
+          <span class="header-title" aria-label="header-title">Documentation</span>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right toplist">
@@ -70,16 +70,16 @@
 
 
   
-  <li><a href="../">Help</a></li>
+  <li><a href="../../../">Help</a></li>
 
   
-  <li><a href="../faq/">FAQ</a></li>
+  <li><a href="../../../faq/">FAQ</a></li>
 
   
-  <li><a href="../docs/">Docs</a></li>
+  <li><a href="../../../docs/">Docs</a></li>
 
   
-  <li class="active"><a href="./">Guides</a></li>
+  <li class="active"><a href="../../">Guides</a></li>
 
 
           </div>
@@ -93,36 +93,50 @@
         <div class="col-md-12">
           
 
-
-
-
-<div class="docs-blocks">
-<h3>Guides</h3>
-<hr/ >
-
-
 <div class="row">
-    <div class="col-md-3">
-        <h4><a href="search/">Search guide</a></h4>
-    </div>
-    <div class="col-md-3">
-        <h4><a href="nih/">NIH Data Management and Sharing Plan Guidance</a></h4>
-        <ul>
-            <li><a href="nih/element1/">Element 1: Data Types</a></li>
-            <li><a href="nih/element2/">Element 2: Related Tools, Software and/or Code:</a></li>
-            <li><a href="nih/element3/">Element 3: Standards</a></li>
-            <li><a href="nih/element4/">Element 4: Data Preservation, Access, and Associated Timelines</a></li>
-            <li><a href="nih/element5/">Element 5: Access, Distribution, and Reuse Considerations</a></li>
-            <li><a href="nih/element6/">Element 6: Oversight of Data Management and Sharing</a></li>
-        </ul>
-    </div>
+    <div class="col-md-4">
+        
+<div class="panel panel-default">
+  <div class="panel-heading"><strong><a href="../">NIH Data Management and Sharing Plan Guidance</a></strong></div>
+  <div class="list-group">
+          
+          <a href="../element1/" class="list-group-item"">Element 1: Data Types</a>
+          
+          <a href="../element2/" class="list-group-item"">Element 2: Related Tools, Software and/or Code:</a>
+          
+          <a href="../element3/" class="list-group-item"">Element 3: Standards</a>
+          
+          <a href="./" class="list-group-item active"">Element 4: Data Preservation, Access, and Associated Timelines</a>
+          
+          <a href="../element5/" class="list-group-item"">Element 5: Access, Distribution, and Reuse Considerations</a>
+          
+          <a href="../element6/" class="list-group-item"">Element 6: Oversight of Data Management and Sharing</a>
+  </div>
 </div>
 
+    </div>
+    <div class="col-md-8">
+      
+<ol class="breadcrumb">
+    <li><a href="../../../docs/">Docs</a></li>
+</ol>
+
+      <div class="docs-blocks">
+      <h1>Element 4: Data Preservation, Access, and Associated Timelines</h1>
+      
+      <hr />
+      <h4>Background</h4>
+<p>For all datasets that you and your collaborators have agreed to deposit to a public, generalist repository, and which are either non-sensitive in nature or fully anonymized, Zenodo will serve your data preservation needs. It is the depositor’s responsibility to anonymize datasets / remove sensitive personal data (see FAQs, <a href="../../../faq/">How does Zenodo handle sensitive datasets?</a>). Zenodo supports long-term preservation of your data deposits, as the repository is projected to be maintained for the lifetime of the host laboratory CERN, defined as at least the next twenty years (see Zenodo’s <a href="https://about.zenodo.org/policies/">Policies</a>).</p>
+<p>Embargoes may be employed for datasets that you wish to make available after a certain date, such as when the associated publication is made public. <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution</a> licenses may be assigned to deposited datasets.</p>
+<h4>NIH-specific guidance on Element 4: Data Preservation, Access, and Associated Timelines</h4>
+<p><strong>4.A</strong>: List Zenodo.org as the repository where your scientific data and metadata arising from the project will be archived. Note: Zenodo may be employed in combination with deposits to other repositories (e.g., in a case where subsets of data needing access controls might be deposited to an NIH-sponsored repository, while other subsets that are safe to make publicly available may be deposited in Zenodo).</p>
+<p><strong>4.B</strong>: Describe how the scientific data will be findable and identifiable, i.e., via a persistent unique identifier or other standard indexing tools.</p>
+<div class="alert alert-info" role="alert"><strong>Sample text for section 4.B:</strong> ... In accordance with the FAIR principles, Zenodo follows the standard of issuing a DOI (digital object identifier) for all deposited datasets, as well as any related materials. This unique persistent identifier makes the data permanently Findable, Identifiable, and retrievable on the web.</div><p><strong>4.C</strong>: Describe when the scientific data will be made available to other users (i.e., no later than time of an associated publication or end of the performance period, whichever comes first) and for how long data will be available.</p>
+<div class="alert alert-info" role="alert"><strong>Zenodo note:</strong> Zenodo’s features meet the primary <a href="https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/selecting-a-data-repository#desirable-characteristics-for-all-data-repositories">Desirable Characteristics for All Data Repositories</a> outlined by the NIH, which denote repositories appropriate for sharing scientific data. These include issuing a unique persistent identifier (DOI), provenance, and long-term sustainability. In section 4.C, you may mention that data will be made available in a timely and compliant manner through the use of an Embargo (e.g., a deposited dataset can be embargoed in Zenodo until it is made Open Access to coincide with the availability of the first associated publication).</div>
+      
+      </div>
+    </div>
 </div>
-
-
-<div class="alert alert-info" style="margin-top: 20px;">
-Couldn't find the answer to your question? <a href="https://zenodo.org/support">Contact us</a>.
 
         </div>
       </div>

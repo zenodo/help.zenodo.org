@@ -25,9 +25,9 @@
 <meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
 
 <meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
-<link rel="stylesheet" href="../static/zenodo.css">
-<link rel="stylesheet" href="../static/style.css">
-<link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../static/style.css">
+<link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
 <title>Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -40,7 +40,7 @@
         <div class="navbar-header">
           <a href="https://zenodo.org"><img class="navbar-brand" src="/static/img/zenodo.svg" alt="Zenodo" /></a>
           <span class="logo-divider"></span>
-          <span class="header-title" aria-label="header-title">Help</span>
+          <span class="header-title" aria-label="header-title">Documentation</span>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right toplist">
@@ -70,16 +70,16 @@
 
 
   
-  <li><a href="../">Help</a></li>
+  <li><a href="../../../">Help</a></li>
 
   
-  <li><a href="../faq/">FAQ</a></li>
+  <li><a href="../../../faq/">FAQ</a></li>
 
   
-  <li><a href="../docs/">Docs</a></li>
+  <li><a href="../../../docs/">Docs</a></li>
 
   
-  <li class="active"><a href="./">Guides</a></li>
+  <li class="active"><a href="../../">Guides</a></li>
 
 
           </div>
@@ -93,36 +93,50 @@
         <div class="col-md-12">
           
 
-
-
-
-<div class="docs-blocks">
-<h3>Guides</h3>
-<hr/ >
-
-
 <div class="row">
-    <div class="col-md-3">
-        <h4><a href="search/">Search guide</a></h4>
-    </div>
-    <div class="col-md-3">
-        <h4><a href="nih/">NIH Data Management and Sharing Plan Guidance</a></h4>
-        <ul>
-            <li><a href="nih/element1/">Element 1: Data Types</a></li>
-            <li><a href="nih/element2/">Element 2: Related Tools, Software and/or Code:</a></li>
-            <li><a href="nih/element3/">Element 3: Standards</a></li>
-            <li><a href="nih/element4/">Element 4: Data Preservation, Access, and Associated Timelines</a></li>
-            <li><a href="nih/element5/">Element 5: Access, Distribution, and Reuse Considerations</a></li>
-            <li><a href="nih/element6/">Element 6: Oversight of Data Management and Sharing</a></li>
-        </ul>
-    </div>
+    <div class="col-md-4">
+        
+<div class="panel panel-default">
+  <div class="panel-heading"><strong><a href="../">NIH Data Management and Sharing Plan Guidance</a></strong></div>
+  <div class="list-group">
+          
+          <a href="../element1/" class="list-group-item"">Element 1: Data Types</a>
+          
+          <a href="../element2/" class="list-group-item"">Element 2: Related Tools, Software and/or Code:</a>
+          
+          <a href="../element3/" class="list-group-item"">Element 3: Standards</a>
+          
+          <a href="../element4/" class="list-group-item"">Element 4: Data Preservation, Access, and Associated Timelines</a>
+          
+          <a href="./" class="list-group-item active"">Element 5: Access, Distribution, and Reuse Considerations</a>
+          
+          <a href="../element6/" class="list-group-item"">Element 6: Oversight of Data Management and Sharing</a>
+  </div>
 </div>
 
+    </div>
+    <div class="col-md-8">
+      
+<ol class="breadcrumb">
+    <li><a href="../../../docs/">Docs</a></li>
+</ol>
+
+      <div class="docs-blocks">
+      <h1>Element 5: Access, Distribution, and Reuse Considerations</h1>
+      
+      <hr />
+      <h4>Background</h4>
+<p>Zenodo encourages Open Access deposits, but is cognizant of the fact that not all data deposits can be fully Open Access. Open Access data deposits and metadata records are fully visible and available to the public, and appear as uploads on the website’s front page. Restricted/Closed Access uploads are not visible on the front page, but are still discoverable through any communities in which they are included, via the DOI, and through search queries. Data depositors control whether their deposits and records are Open Access, Restricted/Closed Access, or Embargoed.</p>
+<p>Licenses in Zenodo empower depositors to outline the ways in which downloads of their materials may be used. Users are responsible for monitoring subsequent uses of their materials. All metadata (e.g., the descriptive metadata comprising the non-file portions of a Zenodo record) is licensed CC0 (public domain), and can be exported and harvested via the OAI-PMH protocol. See the <a href="https://about.zenodo.org/terms/">Terms of Use</a> and <a href="https://about.zenodo.org/policies/">Policies</a> for more details on users’ rights and responsibilities with regard to access and re-use of their data.</p>
+<h4>NIH-specific guidance on Element</h4>
+<p><strong>5.A:</strong> Describe any factors affecting subsequent access, distribution, and reuse of scientific data. These factors can include characteristics of the study’s informed consents, privacy and confidentiality issues, issues arising from data use agreements or patent concerns, etc. See <a href="https://sharing.nih.gov/faqs#/data-management-and-sharing-policy.htm?anchor=56549">NIH’s Justifiable reasons for limiting sharing of data</a>.</p>
+<div class="alert alert-info" role="alert"><strong>Suggestions for section 5.A:</strong> Describe how your study’s informed consent process ensures that participants fully understand that their data may be used for projects beyond the current one. Outline the license under which the deposited data will be available.</div><p><strong>5.B:</strong> State whether access to the scientific data will be controlled.</p>
+<div class="alert alert-info" role="alert"><strong>Zenodo note:</strong> Zenodo does not offer differing levels of access to its records and deposits based on authentication. Records are either fully Open Access, Restricted/Closed, or Embargoed (which become fully Open Access after a period determined by the user). Only deposit to Zenodo datasets, or subsets of your datasets, that you intend to make available through full Open Access.</div><p><strong>5.C:</strong> Describe how privacy, rights, and confidentiality of human research participants will be protected (if applicable).</p>
+<div class="alert alert-info" role="alert"><strong>Zenodo note:</strong> A primary method of protection of the privacy of research subjects is anonymization (de-identification). Zenodo offers no anonymization service. Each user is responsible for anonymization of their own data, and should carefully consider whether an <a href="https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/repositories-for-sharing-scientific-data">NIH-sponsored repository</a> or other repository with multiple levels of data access controls might be more appropriate for data that originated from or contains/ed sensitive personal data. Likewise, Zenodo offers no user agreements or certificates and brokers no data use agreements between primary and secondary users of data. Zenodo’s default model is full Open Access to all data deposits.</div>
+      
+      </div>
+    </div>
 </div>
-
-
-<div class="alert alert-info" style="margin-top: 20px;">
-Couldn't find the answer to your question? <a href="https://zenodo.org/support">Contact us</a>.
 
         </div>
       </div>
