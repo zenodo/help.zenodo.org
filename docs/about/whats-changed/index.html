@@ -1,0 +1,675 @@
+<!doctype html>
+<html>
+  <head>
+<meta charset="utf-8">
+
+<meta property="og:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
+
+
+<meta property="og:title" content="Zenodo - Research. Shared." />
+
+
+<meta property="og:type" content="website" />
+
+
+<meta property="og:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@zenodo_org" />
+<meta name="twitter:creator" content="@zenodo_org" />
+
+<meta name="twitter:title" content="Zenodo - Research. Shared." />
+
+
+
+<meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
+
+<meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
+<link rel="stylesheet" href="../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../static/style.css">
+<link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
+<title>Zenodo</title>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="https://zenodo.org"><img class="navbar-brand" src="/static/img/zenodo.svg" alt="Zenodo" /></a>
+          <span class="logo-divider"></span>
+          <span class="header-title" aria-label="header-title">Documentation</span>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right toplist">
+            
+              <li><a href="https://about.zenodo.org">About</a></li>
+            
+              <li><a href="https://blog.zenodo.org">Blog</a></li>
+            
+              <li><a href="https://help.zenodo.org">Help</a></li>
+            
+              <li><a href="https://about.zenodo.org/projects">Projects</a></li>
+            
+              <li><a href="https://developers.zenodo.org">Developers</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="communities">
+    
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 nav navbar-nav navbar subbar">
+            
+
+
+  
+  <li><a href="../../../">Help</a></li>
+
+  
+  <li><a href="../../../faq/">FAQ</a></li>
+
+  
+  <li class="active"><a href="../../">Docs</a></li>
+
+  
+  <li><a href="../../../guides/">Guides</a></li>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container body-container">
+      <div class="row">
+        <div class="col-md-12">
+          
+
+<div class="row">
+    <div class="col-md-4">
+        
+<div class="panel panel-default">
+  <div class="panel-heading"><strong><a href="../">About</a></strong></div>
+  <div class="list-group">
+          
+          <a href="../whats-new/" class="list-group-item"">What&#39;s new?</a>
+          
+          <a href="./" class="list-group-item active"">What&#39;s changed?</a>
+  </div>
+</div>
+
+    </div>
+    <div class="col-md-8">
+      
+<ol class="breadcrumb">
+    <li><a href="../../">Docs</a></li>
+    
+    <li><a href="../">About</a></li>
+    
+    
+    <li>What&#39;s changed?</li>
+    
+    
+</ol>
+
+      <div class="docs-blocks">
+      <h1>What&#39;s changed?</h1>
+      
+      <hr />
+      <p>These sections provides a comprehensive overview over changes launched on October 13th, 2023 to existing features in Zenodo. In addition to the changes, we also launched many new features described under <a href="../whats-new/">What's new</a>.</p>
+<div class="alert alert-warning" role="alert"><strong>Heads up:</strong> We have made significant changes in the capabilities of community curators as well as the submission workflow to communities. See details on this page.</div><p>Overview of the changes:</p>
+
+      
+      <ul>
+        
+        <li><a href="#navigation">Navigation: Uploads to My dashboard</a></li>
+        
+        
+        
+        <li><a href="#deposit-access">Deposit: Access rights to visibility</a></li>
+        
+        
+        
+        
+        
+        
+        <li><a href="#deposit-file-upload">Deposit: File upload</a></li>
+        
+        
+        
+        
+        
+        <li><a href="#deposit-fields">Deposit: Field changes</a></li>
+        
+        
+        
+        <li><a href="#deposit-versioning">Deposit: Files in new versions</a></li>
+        
+        
+        
+        <li><a href="#deposit-communities">Deposit: Community selection</a></li>
+        
+        
+        
+        
+        
+        
+        <li><a href="#review">Communities: Records are published after review</a></li>
+        
+        
+        
+        
+        
+        
+        <li><a href="#multicommunity">Communities: Submit to multiple communities</a></li>
+        
+        
+        
+        
+        
+        
+        <li><a href="#curatorsedit">Communities: Curators can edit metadata</a></li>
+        
+        
+        
+        <li><a href="#curatorsview">Communities: Members can view restricted files in records</a></li>
+        
+        
+        
+        <li><a href="#stats-uniqueviews">Usage statistics: Unique/Total views</a></li>
+        
+        
+        
+        <li><a href="#records-commuinties">Records: Manage communities</a></li>
+        
+        
+        
+        
+        
+        <li><a href="#citation-styles">Records: Fewer citation styles</a></li>
+        
+        
+        
+        
+        
+        <li><a href="#shared-links">Access requests: Shared links</a></li>
+        
+        
+        
+        
+        
+        
+      </ul>
+      
+        <h3 id="navigation" class="docs">Navigation: Uploads to My dashboard <small><a href="#navigation" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>The <strong>Uploads</strong> header menu item has been removed in favour of a new <strong>My dashboard</strong> menu item. See <a href="../../get-started/navigating-zenodo/">Navigating Zenodo</a> for details about the new navigation.</p>
+
+</p>
+        <h3 id="deposit-access" class="docs">Deposit: Access rights to visibility <small><a href="#deposit-access" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>Previously, you controlled access to a record's files by setting the <strong>access right</strong> field:</p>
+<ul>
+<li>Open access - both metadata and files where publicly accessible.</li>
+<li>Restricted access - metadata was public, files were restricted and user could request access to files.</li>
+<li>Embargoed access - metadata was public, files were restricted until a given date after which they were automatically made public.</li>
+<li>Closed access - metadata was public, files were restricted</li>
+</ul>
+<p>The access right field has now been changed into a <strong>visibility</strong> field with two options:</p>
+<ul>
+<li>Public: Files are public.</li>
+<li>Restricted: Files are restricted.</li>
+</ul>
+<p>In case of restricted files you can choose to:</p>
+<ul>
+<li>Apply an embargo</li>
+<li>Share with specific users or by secret link</li>
+<li>Enable access requests</li>
+</ul>
+<p>This change provides for a more flexible access control to your records, and supports uses that previously weren't possible - e.g. access requests to an embargoed record.</p>
+<p>Below table shows a mapping from the old access right field to the new visibility field:</p>
+<table class="table">
+<thead><tr>
+<th>Files</th>
+<th>Public</th>
+<th>Restricted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open access</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Embargoed access</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Restricted access</td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>Closed access</td>
+<td></td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Previous</strong></p>
+
+        
+            <p><img src="access-right-old.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>New</strong>: Example showing an open access record.</p>
+
+        
+            <p><img src="access-right-new2.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p><strong>New</strong>: Example showing an embargoed access record.</p>
+
+        
+            <p><img src="access-right-new.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="deposit-file-upload" class="docs">Deposit: File upload <small><a href="#deposit-file-upload" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>The file upload section of the upload form has received the following updates:</p>
+<ul>
+<li><strong>Automatic start of upload:</strong> File uploading will start immediately, so you no longer have to press the green "Start upload" button.</li>
+<li><strong>Default preview:</strong> The new file uploader allows you to select which file you want previewed by default on the record landing page.</li>
+<li><strong>Quota</strong>: The default quota for size and number of files is now displayed on the form.</li>
+</ul>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Previous</strong></p>
+
+        
+            <p><img src="file-upload-old.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>New</strong></p>
+
+        
+            <p><img src="file-upload-new.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="deposit-fields" class="docs">Deposit: Field changes <small><a href="#deposit-fields" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>The deposit form have received several minor changes:</p>
+<ul>
+<li><em>DOI</em>: The DOI widget has been changed to more clearly ask if an uploader already have a DOI or not to prevent accidential creation of DOIs.</li>
+<li><em>Creators/contributors</em>: The full name has been split into <em>family name</em> and <em>given names</em>, and a new name type has been added to also support organisational names. Creators can now also have roles. The difference between creators and contributors is that creators are included in the citation, while contributors are not included.</li>
+<li><em>Notes</em>: The notes field has been integrated into the <em>additonal descriptions</em> field.</li>
+<li><em>Language</em>: You can now specify multiple languages instead of only one language.</li>
+<li><em>Subjects</em> field has been integrated into a combined <em>Keywords and subjects</em> for freeform text fields and subjects from vocabularies.</li>
+<li><em>Thesis supervisors</em> field has been integrated into the <em>Contributors</em> field by adding the <em>supervisor</em> role.</li>
+</ul>
+
+</p>
+        <h3 id="deposit-versioning" class="docs">Deposit: Files in new versions <small><a href="#deposit-versioning" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>When you create a new version of a record we previously copied all files over from the old to the new version. We have modified this behavior so you now are required to explicitly import the files from the previous version via simply click on <strong>Import files</strong>-button.</p>
+<p><img src="import-files.png" width="100%"></p>
+
+</p>
+        <h3 id="deposit-communities" class="docs">Deposit: Community selection <small><a href="#deposit-communities" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>The community selector has been moved to the header, and the communities feature have received several larger changes:</p>
+<ul>
+<li><strong>Reviews</strong>: When you submit to a community your record will now go through the community review <strong>before</strong> the record is published - i.e. your record is not public until the community has reviewed the record. You can still publish your record without a community, and later request to have it included in the community if you wish to use the old workflow.</li>
+<li><strong>Submit to one</strong>: You can only submit a draft to one community. Once your record is published, you can request to have it included in multiple communities. It is only the submission of the first draft which is limited to one community.</li>
+</ul>
+<p>Above, changes the default behavior of how Zenodo used to behave. We have made the changes to ensure we have a simple and streamlined user experience for our new review feature.</p>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Previous</strong></p>
+
+        
+            <p><img src="community-selection-old.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>New</strong></p>
+
+        
+            <p><img src="community-selection-new.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>In addition we have made it easier to browse and search for communities using a new community selection widget:</p>
+
+        
+            <p><img src="community-selection-new2.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="review" class="docs">Communities: Records are published after review <small><a href="#review" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>Previously when you submitted a record to a community, your record would be published immediately, after which the community curator could accept or decline the inclusion of the published record.</p>
+<p>Now, a record is no longer published immediately. Instead, the record is published once the community curator accepts the record into the community.</p>
+<p>You can still achieve the old behavior by following the below steps:</p>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Publish without community</strong>: First, publish your record without selecting a community. See <a href="../../../deposit/">deposit</a> documentation.</p>
+
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Submit to community</strong>: Next, via the record landing page, submit to the desired community. See <a href="TODO">submit to community</a> documentation.</p>
+
+        
+    </div>
+</div>
+        <p>
+<p>The change was introduced to enable community curators to review and edit metadata <em>and files</em> prior to the record being published.</p>
+
+</p>
+        <h3 id="multicommunity" class="docs">Communities: Submit to multiple communities <small><a href="#multicommunity" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>The workflow to submit to multiple communities has changed significantly. You could previously submit your record to multiple communities directly via the deposit form. This has now changed into a two-step process. In order to submit to multiple communities follow below steps:</p>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Publish without community</strong>: First, publish your record without selecting a community. See <a href="../../../deposit/">deposit</a> documentation.</p>
+
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Submit to community</strong>: Next, via the record landing page, submit to multiple communities. See <a href="TODO">submit to community</a> documentation.</p>
+
+        
+    </div>
+</div>
+        <p>
+<p>The change is introduced due to our new review feature. When you submit a record to a community, your record is no longer published immediately but instead when the community curators accepts the record. Allowing the submission to multiple communities would make it very complex for curators and uploaders to understand when a record is published.</p>
+<p><em>Note:</em> The change does not affect our legacy REST API from which it is still possible to submit to multiple communities. The legacy REST API will be deprecated in the future so new integrations should not rely on the feature being available in the future.</p>
+
+</p>
+        <h3 id="curatorsedit" class="docs">Communities: Curators can edit metadata <small><a href="#curatorsedit" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>Community curators are now able to edit the metadata of records in their community. Previously a community curator was only able to accept/decline the inclusion of records in their community, but was not able to edit the metadata. Instead they were required to ask for changes to the uploader.</p>
+<ul>
+<li>All new submissions and records published are automatically subject to this change.</li>
+<li>All published records NOT part of a community are automatically subject to this change.</li>
+<li>All published records part of a community prior to Sep 29th, 2023 is NOT yet subject to the change (i.e. community curators cannot edit the record, unless they curator and uploader is the same user).</li>
+</ul>
+<p>The last category of records is subject to the following approval workflow. The uploader of the record will be sent a request to accept that the community curators can edit the metadata.</p>
+<ul>
+<li>If the uploader <strong>declines</strong> the request, the record will be <strong>removed from the community</strong>.</li>
+<li>If the uploader <strong>accepts</strong> the request, the record will be <strong>editable by the community curators</strong>.</li>
+<li>If the uploader neither <strong>accepts</strong> nor <strong>declines</strong> the request within 6 months of receiving the request, the record will made <strong>editable by the community curators</strong>.</li>
+</ul>
+
+</p>
+        <h3 id="curatorsview" class="docs">Communities: Members can view restricted files in records <small><a href="#curatorsview" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>Record metadata is always public, but access to files can be restricted. Previously only the uploader could view the restricted files. Now, if a record is part of a community, the community members will also be able to view the restricted files.</p>
+<p>All records published prior to Sep 29th, 2023 with restricted files (previously using the restricted access or closed access) AND which was part of a community in which the uploader was not also community owner <strong>is NOT subject to the change</strong>.</p>
+<p>Uploaders of above records will receive a request to accept/decline the ability of curators to view the restricted files:</p>
+<ul>
+<li>If the uploader <strong>declines</strong> the request, the record will be <strong>removed from the community</strong>.</li>
+<li>If the uploader <strong>accepts</strong> the request, the restricted files will be <strong>viewable by the community members</strong>.</li>
+<li>If the uploader neither <strong>accepts</strong> nor <strong>declines</strong> the request within 6 months of receiving the request, the record will be <strong>removed from the community</strong>.</li>
+</ul>
+
+</p>
+        <h3 id="stats-uniqueviews" class="docs">Usage statistics: Unique/Total views <small><a href="#stats-uniqueviews" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>We have simplified the usage statistics we display on record landing pages. Previous we displayed both unique and total views for both the specific and all versions. We have simplified this to show only the unique views.</p>
+<p>The unique views is what gives the most accurate number of real usage. A unique view is counted as a view by a visitor within a one hour window. Total views on the other hand only filter out double clicks, and is thus far easier to game than the unique views.</p>
+
+</p>
+        <h3 id="records-commuinties" class="docs">Records: Manage communities <small><a href="#records-commuinties" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>Previously you could see pending community inclusions requests, as well as remove the record from communities it was part of. We have modified the interface slightly to better support larger number of communities, and in addition we've added the possibility to also submit the record to further communities.</p>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Previous</strong></p>
+
+        
+            <p><img src="records-com-old.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>New</strong></p>
+
+        
+            <p><img src="records-com-new.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="citation-styles" class="docs">Records: Fewer citation styles <small><a href="#citation-styles" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>We previously supported 800+ different citation styles. It however was quite difficult to find the right citation style, so we have reduced the number of citation styles available in the user interface to a short drop-down list. Our REST API continues to support 800+ different citation styles.</p>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Previous</strong></p>
+
+        
+            <p><img src="csl-old.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>New</strong></p>
+
+        
+            <p><img src="csl-new.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="shared-links" class="docs">Access requests: Shared links <small><a href="#shared-links" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>First, take note of the change for the <a href="#deposit-access">access right</a> field into a visibility field.</p>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p><strong>Previous</strong>: Previously you could enable user to request access to the files in your record by setting the <strong>restricted access</strong> option and provide a condition under which you give access.</p>
+
+        
+            <p><img src="shared-links-old.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p><strong>New</strong>: In the new system you set the <strong>visibility</strong> field to <strong>Restricted</strong>. See next step for how to enable users to request access.</p>
+
+        
+            <p><img src="shared-links-new.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p><strong>New</strong>: You can enable users to request access from record landing page by click the blue <strong>Share</strong>-button. In the pop-up click the <strong>Access request</strong> tab, and check the boxes to enable users and/or guests to request access.</p>
+
+        
+            <p><img src="shared-links-new3.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <p>
+<p>Above described how to enable users to request access to your record. The new interface supports a wider set of use cases and the user interface have therefore been unified to support these cases.</p>
+<h5>Approving requests</h5>
+<p>The submitted requests for access will arrive in the new unified requests inbox under My dashboard &gt; My requests or by clicking the inbox-icon in the header. There you can communicate with the requestor (not previously possible), and accept/decline the request.</p>
+<h5>Viewing requests</h5>
+<p>Similarly, you can view the already granted access under the <strong>Links</strong> and <strong>People</strong> tabs (see screenshot above).</p>
+
+</p>
+      </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <footer class="footer">
+    <div class="menu-wrapper">
+      <div class="container">
+        <div class="row footer-menu">
+          <div class="col-xs-12 col-md-8">
+            <div class="row">
+              <div class="col-xs-2 col-md-2">
+                <h5>About</h5>
+                <ul class="list-unstyled">
+                  <li><a href="http://about.zenodo.org">About</a></li>
+                  <li><a href="http://about.zenodo.org/policies/">Policies</a></li>
+                  <li><a href="http://about.zenodo.org/infrastructure/">Infrastructure</a></li>
+                  <li><a href="http://about.zenodo.org/principles/">Principles</a></li>
+                  <li><a href="http://about.zenodo.org/roadmap/">Roadmap</a></li>
+                  <li><a href="http://about.zenodo.org/projects/">Projects</a></li>
+                  <li><a href="http://about.zenodo.org/contact/">Contract</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-2 col-md-2">
+                <h5>Blog</h5>
+                <ul class="list-unstyled">
+                  <li><a href="https://blog.zenodo.org">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-2 col-md-2">
+                <h5>Help</h5>
+                <ul class="list-unstyled">
+                  <li><a href="https://help.zenodo.org">Overview</a></li>
+                  <li><a href="https://help.zenodo.org/faq/">FAQ</a></li>
+                  <li><a href="https://help.zenodo.org/guides/">Guides</a></li>
+                  <li><a href="https://zenodo.org/support">Support</a></li>
+              </div>
+              <div class="col-xs-2 col-md-2">
+                <h5>Developers</h5>
+                <ul class="list-unstyled">
+                <li><a href="https://developers.zenodo.org">REST API</a></li>
+                <li><a href="https://developers.zenodo.org#oai-pmh">OAI-PMH</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-2 col-md-2">
+                <h5>Contribute</h5>
+                <ul class="list-unstyled">
+                  <li><a href="https://github.com/zenodo/zenodo"><i class="fa fa-external-link"></i> GitHub</a></li>
+                  <li><a href="https://zenodo.org/donate"><i class="fa fa-external-link"></i> Donate</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="pull-right-md text-center-sm text-center-xs">
+              <h5>Funded by</h5>
+              <ul class="list-inline">
+                <li><a href="https://home.cern"><img src="/static/img/cern.png" width="60" height="60" /></a></li>
+                <li><a href="https://www.openaire.eu"><img src="/static/img/openaire.png" width="80"/></a></li>
+                <li><a href="https://ec.europa.eu/programmes/horizon2020/"><img src="/static/img/eu.png" width="88" height="60" /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6">
+          <div class="pull-right-sm text-center-xs">
+            <ul class="list-inline">
+              <li><a href="https://stats.uptimerobot.com/vlYOVuWgM">Status</a></li>
+              <li><a href="https://about.zenodo.org/privacy-policy">Privacy policy</a></li>
+              <li><a href="https://about.zenodo.org/terms">Terms of Use</a></li>
+              <li><a href="https://about.zenodo.org/contact">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6 text-center-xs">
+          <p><a title="Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International License." rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons Licence" height="20" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>&nbsp; Powered by <a href="https://home.cern/science/computing/data-centre">CERN Data Centre</a> &amp; <a href="http://inveniosoftware.org">Invenio</a>.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+</body>
+</html>
