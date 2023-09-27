@@ -104,11 +104,11 @@
           
           <a href="../change-password/" class="list-group-item"">Change password</a>
           
-          <a href="./" class="list-group-item active"">Reset password</a>
+          <a href="../reset-password/" class="list-group-item"">Reset password</a>
           
           <a href="../changing-profile-visibility/" class="list-group-item"">Change profile visibility</a>
           
-          <a href="../linking-accounts/" class="list-group-item"">Linking your GitHub/ORCID/OpenAIRE account</a>
+          <a href="./" class="list-group-item active"">Linking your GitHub/ORCID/OpenAIRE account</a>
           
           <a href="../managing-notifications/" class="list-group-item"">Manage notification preferences</a>
           
@@ -125,75 +125,96 @@
     <li><a href="../">Profile</a></li>
     
     
-    <li>Reset password</li>
+    <li>Linking your GitHub/ORCID/OpenAIRE account</li>
     
     
 </ol>
 
       <div class="docs-blocks">
-      <h1>Reset password</h1>
+      <h1>Linking your GitHub/ORCID/OpenAIRE account</h1>
       
       <hr />
-      <p>If you have forgotten your password, or if you logged in with e.g. GitHub or ORCID and never set a password you can use this method to reset and create a new password for your account.</p>
+      <div class="alert alert-info" role="alert">If you don't already have an account, see the section <a href="../../get-started/create-an-account/">create an account</a> on how to sign up with GitHub, ORCID or OpenAIRE. The signup process will automatically link the external account.</div><p>Zenodo enables you to login with your an external account. The following authentication providers are supported:</p>
+<ul>
+<li><strong>GitHub</strong>: Linking your GitHub account enables you to automatically archive your repositories on GitHub via our GitHub integration.</li>
+<li><strong>ORCID</strong>: Enables you to login with your ORCID account and associates your ORCID with your Zenodo account.</li>
+<li><strong>OpenAIRE</strong>: Enables you to login via your institutional account (if the institution is connected to eduGAIN) and other EOSC Core services.</li>
+</ul>
+<p>Learn here how to:</p>
 
       
-        <h3 id="resetpw" class="docs">Reset your password <small><a href="#resetpw" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+      <ul>
+        
+        <li><a href="#connect">Connect an external account</a></li>
+        
+        
+        
+        
+        
+        
+        <li><a href="#disconnect">Disconnect an external account</a></li>
+        
+        
+        
+      </ul>
+      
+        <h3 id="connect" class="docs">Connect an external account <small><a href="#connect" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>First, ensure you have <a href="../../get-started/logging-in/#logout">logged out</a>.</p>
+        <p>Click the profile menu in the header and select <strong>Linked accounts</strong>.</p>
 
+        
+            <p><img src="profile-menu.png" class="img-thumbnail"></p>
         
     </div>
 </div>
         <div class="row">
     <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>Login</strong> in the header.</p>
+        <p>Click the <strong>Connect</strong>-button next to the service provider you would like to connect.</p>
 
         
-            <p><img src="login.png" class="img-thumbnail"></p>
+            <p><img src="accounts.png" class="img-thumbnail"></p>
         
     </div>
 </div>
         <div class="row">
     <div class="col-md-1"><p><span class="badge">3</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>Forgot password?</strong> in the bottom of the login page.</p>
+        <p>You will be redirected to the chosen service provider (i.e. GitHub, ORCID or OpenAIRE) to authenticate on their platform. Once you have successfully authenticated you will be redirected back to Zenodo.</p>
 
-        
-            <p><img src="forgot.png" class="img-thumbnail"></p>
         
     </div>
 </div>
         <div class="row">
     <div class="col-md-1"><p><span class="badge">4</span></p></div>
     <div class="col-md-11">
-        <p>Enter the <strong>email address</strong> with which you registered and click <strong>Reset password</strong></p>
+        <p>If the linking of the account was successful,  you'll see a green tickmark next to the service provider (e.g. like GitHub in the screenshot in step 2). You will now be able to login on Zenodo using the external account.</p>
 
         
-            <p><img src="reset.png" class="img-thumbnail"></p>
+    </div>
+</div>
+        <h3 id="disconnect" class="docs">Disconnect an external account <small><a href="#disconnect" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click the profile menu in the header and select <strong>Linked accounts</strong>.</p>
+
+        
+            <p><img src="profile-menu.png" class="img-thumbnail"></p>
         
     </div>
 </div>
         <div class="row">
-    <div class="col-md-1"><p><span class="badge">5</span></p></div>
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p>An email with instructions will be sent to the address you provided.</p>
+        <p>Click the <strong>Disconnect</strong>-button next to the service provider you would like to disconnect.</p>
 
         
-            <p><img src="instructions.png" class="img-thumbnail"></p>
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">6</span></p></div>
-    <div class="col-md-11">
-        <p>Following the instructions in the email will take you to a page on Zenodo where you can change your password. Please choose a strong long password.</p>
-
-        
-            <p><img src="changepw.png" class="img-thumbnail"></p>
+            <p><img src="accounts.png" class="img-thumbnail"></p>
         
     </div>
 </div>

@@ -104,7 +104,7 @@
           
           <a href="../change-password/" class="list-group-item"">Change password</a>
           
-          <a href="./" class="list-group-item active"">Reset password</a>
+          <a href="../reset-password/" class="list-group-item"">Reset password</a>
           
           <a href="../changing-profile-visibility/" class="list-group-item"">Change profile visibility</a>
           
@@ -112,7 +112,7 @@
           
           <a href="../managing-notifications/" class="list-group-item"">Manage notification preferences</a>
           
-          <a href="../viewing-devices/" class="list-group-item"">View logged in devices</a>
+          <a href="./" class="list-group-item active"">View logged in devices</a>
   </div>
 </div>
 
@@ -125,24 +125,66 @@
     <li><a href="../">Profile</a></li>
     
     
-    <li>Reset password</li>
+    <li>View logged in devices</li>
     
     
 </ol>
 
       <div class="docs-blocks">
-      <h1>Reset password</h1>
+      <h1>View logged in devices</h1>
       
       <hr />
-      <p>If you have forgotten your password, or if you logged in with e.g. GitHub or ORCID and never set a password you can use this method to reset and create a new password for your account.</p>
+      <div class="alert alert-info" role="alert">If you think your account may have been compromised, please <a href="https://www.zenodo.org/support">contact us</a> immediately.</div><p>If you authenticate from multiple devices to your Zenodo account, you'll be able to see all the devices that are logged into your account.</p>
+<p>The information you see in the overview such as IP address, login date, browser and operating system is only stored while your authenticated session is active, and if you don't logout it is automatically deleted after 30 days. See our <a href="https://about.zenodo.org/privacy-policy/">privacy policy</a>.</p>
+<p>In the following section you can learn:</p>
 
       
-        <h3 id="resetpw" class="docs">Reset your password <small><a href="#resetpw" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+      <ul>
+        
+        <li><a href="#view">Viewing logged in devices</a></li>
+        
+        
+        
+        
+        <li><a href="#revoke">Logout from another device</a></li>
+        
+        
+        
+        
+      </ul>
+      
+        <h3 id="view" class="docs">Viewing logged in devices <small><a href="#view" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>First, ensure you have <a href="../../get-started/logging-in/#logout">logged out</a>.</p>
+        <p>Click the profile menu in the header and select <strong>Security</strong>.</p>
+
+        
+            <p><img src="profile-menu.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Under <strong>Sessions</strong> you will see all devices logged into your account including their IP address, date of login, and browser. Your current device is marked with a green dot, and the button says <strong>Logout</strong>.</p>
+
+        
+            <p><img src="sessions.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="revoke" class="docs">Logout from another device <small><a href="#revoke" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>Use this method if you e.g. forgot to logout from a device and don't have the device readily accessible. If you want to logout from your current device see how to <a href="../../get-started/logging-in/#logout">log out</a>.</p>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Find the device from the list of devices (see <a href="#view">viewing logged in devices</a>).</p>
 
         
     </div>
@@ -150,50 +192,8 @@
         <div class="row">
     <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>Login</strong> in the header.</p>
+        <p>Click <strong>Revoke</strong>-button to logout the device. If the button says <strong>Logout</strong> is means the it's the authenticated session for your current device.</p>
 
-        
-            <p><img src="login.png" class="img-thumbnail"></p>
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">3</span></p></div>
-    <div class="col-md-11">
-        <p>Click <strong>Forgot password?</strong> in the bottom of the login page.</p>
-
-        
-            <p><img src="forgot.png" class="img-thumbnail"></p>
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">4</span></p></div>
-    <div class="col-md-11">
-        <p>Enter the <strong>email address</strong> with which you registered and click <strong>Reset password</strong></p>
-
-        
-            <p><img src="reset.png" class="img-thumbnail"></p>
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">5</span></p></div>
-    <div class="col-md-11">
-        <p>An email with instructions will be sent to the address you provided.</p>
-
-        
-            <p><img src="instructions.png" class="img-thumbnail"></p>
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">6</span></p></div>
-    <div class="col-md-11">
-        <p>Following the instructions in the email will take you to a page on Zenodo where you can change your password. Please choose a strong long password.</p>
-
-        
-            <p><img src="changepw.png" class="img-thumbnail"></p>
         
     </div>
 </div>

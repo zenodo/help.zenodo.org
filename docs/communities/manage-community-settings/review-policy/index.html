@@ -25,9 +25,9 @@
 <meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
 
 <meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
-<link rel="stylesheet" href="../../../static/zenodo.css">
-<link rel="stylesheet" href="../../../static/style.css">
-<link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../../static/style.css">
+<link rel="stylesheet" href="../../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
 <title>Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -70,16 +70,16 @@
 
 
   
-  <li><a href="../../../">Help</a></li>
+  <li><a href="../../../../">Help</a></li>
 
   
-  <li><a href="../../../faq/">FAQ</a></li>
+  <li><a href="../../../../faq/">FAQ</a></li>
 
   
-  <li class="active"><a href="../../">Docs</a></li>
+  <li class="active"><a href="../../../">Docs</a></li>
 
   
-  <li><a href="../../../guides/">Guides</a></li>
+  <li><a href="../../../../guides/">Guides</a></li>
 
 
           </div>
@@ -97,22 +97,22 @@
     <div class="col-md-4">
         
 <div class="panel panel-default">
-  <div class="panel-heading"><strong><a href="../">Profile</a></strong></div>
+  <div class="panel-heading"><strong><a href="../../">Communities</a></strong></div>
   <div class="list-group">
           
-          <a href="../editing-your-profile/" class="list-group-item"">Edit profile</a>
+          <a href="../../about-communities/" class="list-group-item"">About communities</a>
           
-          <a href="../change-password/" class="list-group-item"">Change password</a>
+          <a href="../../creating-a-community/" class="list-group-item"">Create new community</a>
           
-          <a href="./" class="list-group-item active"">Reset password</a>
+          <a href="../../view-my-communities/" class="list-group-item"">View my communities</a>
           
-          <a href="../changing-profile-visibility/" class="list-group-item"">Change profile visibility</a>
+          <a href="../" class="list-group-item active"">Manage community settings</a>
           
-          <a href="../linking-accounts/" class="list-group-item"">Linking your GitHub/ORCID/OpenAIRE account</a>
+          <a href="../edit-profile/" class="sub list-group-item">Edit community profile</a>
           
-          <a href="../managing-notifications/" class="list-group-item"">Manage notification preferences</a>
+          <a href="./" class="sub list-group-item highlight">Set review policy</a>
           
-          <a href="../viewing-devices/" class="list-group-item"">View logged in devices</a>
+          <a href="../add-pages/" class="sub list-group-item">Add about/curation policy pages</a>
   </div>
 </div>
 
@@ -120,29 +120,37 @@
     <div class="col-md-8">
       
 <ol class="breadcrumb">
-    <li><a href="../../">Docs</a></li>
+    <li><a href="../../../">Docs</a></li>
     
-    <li><a href="../">Profile</a></li>
+    <li><a href="../../">Communities</a></li>
     
     
-    <li>Reset password</li>
+    <li><a href="../">Manage community settings</a></li>
+    
+    
+    <li>Set review policy</li>
+    
     
     
 </ol>
 
       <div class="docs-blocks">
-      <h1>Reset password</h1>
+      <h1>Set review policy</h1>
       
       <hr />
-      <p>If you have forgotten your password, or if you logged in with e.g. GitHub or ORCID and never set a password you can use this method to reset and create a new password for your account.</p>
+      <p>The review policy enables communities to set how submissions from community owners/managers/curators are handled. There following two options exists:</p>
+<ul>
+<li><strong>Review all submissions:</strong> All submissions goes through a review by community curators.</li>
+<li><strong>Allow curators to publish without review</strong>: Submissions by community owners, managers and curators automatically published in the community without a review.</li>
+</ul>
 
       
-        <h3 id="resetpw" class="docs">Reset your password <small><a href="#resetpw" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="review" class="docs">Set review policy <small><a href="#review" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>First, ensure you have <a href="../../get-started/logging-in/#logout">logged out</a>.</p>
+        <p>Go to your <a href="../#manage">community settings</a> and click <strong>Review policy</strong> in the left menu.</p>
 
         
     </div>
@@ -150,50 +158,18 @@
         <div class="row">
     <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>Login</strong> in the header.</p>
+        <p>On the <strong>Review policy</strong> you can modify the submission review policy for the community.</p>
 
         
-            <p><img src="login.png" class="img-thumbnail"></p>
+            <p><img src="review-policy.png" class="img-thumbnail"></p>
         
     </div>
 </div>
         <div class="row">
     <div class="col-md-1"><p><span class="badge">3</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>Forgot password?</strong> in the bottom of the login page.</p>
+        <p>Click <strong>Save</strong>-button to persist the changes.</p>
 
-        
-            <p><img src="forgot.png" class="img-thumbnail"></p>
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">4</span></p></div>
-    <div class="col-md-11">
-        <p>Enter the <strong>email address</strong> with which you registered and click <strong>Reset password</strong></p>
-
-        
-            <p><img src="reset.png" class="img-thumbnail"></p>
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">5</span></p></div>
-    <div class="col-md-11">
-        <p>An email with instructions will be sent to the address you provided.</p>
-
-        
-            <p><img src="instructions.png" class="img-thumbnail"></p>
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">6</span></p></div>
-    <div class="col-md-11">
-        <p>Following the instructions in the email will take you to a page on Zenodo where you can change your password. Please choose a strong long password.</p>
-
-        
-            <p><img src="changepw.png" class="img-thumbnail"></p>
         
     </div>
 </div>
