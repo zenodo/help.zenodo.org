@@ -25,9 +25,9 @@
 <meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
 
 <meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
-<link rel="stylesheet" href="../../../static/zenodo.css">
-<link rel="stylesheet" href="../../../static/style.css">
-<link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../../static/style.css">
+<link rel="stylesheet" href="../../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
 <title>Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -70,16 +70,16 @@
 
 
   
-  <li><a href="../../../">Help</a></li>
+  <li><a href="../../../../">Help</a></li>
 
   
-  <li><a href="../../../faq/">FAQ</a></li>
+  <li><a href="../../../../faq/">FAQ</a></li>
 
   
-  <li class="active"><a href="../../">Docs</a></li>
+  <li class="active"><a href="../../../">Docs</a></li>
 
   
-  <li><a href="../../../guides/">Guides</a></li>
+  <li><a href="../../../../guides/">Guides</a></li>
 
 
           </div>
@@ -97,18 +97,34 @@
     <div class="col-md-4">
         
 <div class="panel panel-default">
-  <div class="panel-heading"><strong><a href="../">Communities</a></strong></div>
+  <div class="panel-heading"><strong><a href="../../">Communities</a></strong></div>
   <div class="list-group">
           
-          <a href="../about-communities/" class="list-group-item"">About communities</a>
+          <a href="../../about-communities/" class="list-group-item"">About communities</a>
           
-          <a href="../creating-a-community/" class="list-group-item"">Create new community</a>
+          <a href="../../creating-a-community/" class="list-group-item"">Create new community</a>
           
-          <a href="./" class="list-group-item active"">View my communities</a>
+          <a href="../../view-my-communities/" class="list-group-item"">View my communities</a>
           
-          <a href="../manage-community-settings/" class="list-group-item"">Manage community settings</a>
+          <a href="../../manage-community-settings/" class="list-group-item"">Manage community settings</a>
           
-          <a href="../manage-members/" class="list-group-item"">Manage members</a>
+          <a href="../" class="list-group-item active"">Manage members</a>
+          
+          <a href="../invite-member/" class="sub list-group-item">Invite member</a>
+          
+          <a href="../view-invitations/" class="sub list-group-item">View invitations</a>
+          
+          <a href="../cancel-invite/" class="sub list-group-item">Cancel/edit invitations</a>
+          
+          <a href="../remove-member/" class="sub list-group-item">Remove member</a>
+          
+          <a href="../leave-community/" class="sub list-group-item">Leave community</a>
+          
+          <a href="./" class="sub list-group-item highlight">Change member role</a>
+          
+          <a href="../change-visibility/" class="sub list-group-item">Set membership visibility</a>
+          
+          <a href="../transfer-ownership/" class="sub list-group-item">Transfer ownership</a>
   </div>
 </div>
 
@@ -116,29 +132,34 @@
     <div class="col-md-8">
       
 <ol class="breadcrumb">
-    <li><a href="../../">Docs</a></li>
+    <li><a href="../../../">Docs</a></li>
     
-    <li><a href="../">Communities</a></li>
+    <li><a href="../../">Communities</a></li>
     
     
-    <li>View my communities</li>
+    <li><a href="../">Manage members</a></li>
+    
+    
+    <li>Change member role</li>
+    
     
     
 </ol>
 
       <div class="docs-blocks">
-      <h1>View my communities</h1>
+      <h1>Change member role</h1>
       
       <hr />
-      <p>The following section describes how to browse all the communities of which you are an owner or a member.</p>
+      <p>A member in a community always has a role as either reader, curator, manager or owner. See <a href="../../about-communities/">about communities</a> for details on roles and their permissions.</p>
+<p>Only community managers and owners can change roles of other members, and only owners can change roles to an owner.</p>
 
       
-        <h3 id="view" class="docs">View my communities <small><a href="#view" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="transfer" class="docs">Change a member&#39;s role <small><a href="#transfer" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>My dashboard</strong> menu item in the header.</p>
+        <p>Go to the <a href="../#manage">Members</a>-tab of your community.</p>
 
         
     </div>
@@ -146,10 +167,20 @@
         <div class="row">
     <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>My communities</strong> in the tab. All communities of which you are an owner or a member will be shown the list.</p>
+        <p>Find the member you wish to change the role.</p>
 
         
-            <p><img src="mycommunities.png" class="img-thumbnail"></p>
+            <p><img src="members.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>Change the role of the member using the drop-down menu in the <strong>Role</strong>-column. Note that only community owners/managers can change roles, and that you cannot change your own role, nor as a manager change a member's role to an owner.</p>
+
+        
+            <p><img src="menu.png" class="img-thumbnail"></p>
         
     </div>
 </div>

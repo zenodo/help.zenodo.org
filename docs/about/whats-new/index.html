@@ -153,31 +153,31 @@
         
         
         
-        <li><a href="#deposit">Deposit: Visibility</a></li>
+        <li><a href="#deposit-visibility">Deposit: Visibility</a></li>
         
         
         
-        <li><a href="#deposit">Deposit: Creators/affiliations auto-completion from ORCID and ROR</a></li>
+        <li><a href="#deposit-creators">Deposit: Creators/affiliations auto-completion from ORCID and ROR</a></li>
         
         
         
-        <li><a href="#deposit">Deposit: License selector</a></li>
+        <li><a href="#deposit-license">Deposit: License selector</a></li>
         
         
         
-        <li><a href="#deposit">Deposit: Funding selector</a></li>
+        <li><a href="#deposit-funding">Deposit: Funding selector</a></li>
         
         
         
-        <li><a href="#deposit">Deposit: Default file preview</a></li>
+        <li><a href="#deposit-filepreview">Deposit: Default file preview</a></li>
         
         
         
-        <li><a href="#deposit">Deposit: Imprecise dates</a></li>
+        <li><a href="#deposit-dates">Deposit: Imprecise dates</a></li>
         
         
         
-        <li><a href="#deposit">Deposit: Subjects</a></li>
+        <li><a href="#deposit-subjects">Deposit: Subjects</a></li>
         
         
         
@@ -204,8 +204,7 @@
 <li><strong>Manager</strong> - can invite new and manage existing members of the community (in addition to the curator role).</li>
 <li><strong>Owner</strong> - can manage settings and delete the community (in addition to the manager role).</li>
 </ul>
-<p>Members can be invited from Zenodo's users. Currently, only users who have changed their <a href="#profile">profile visibility</a> will be able to be invited. By end of the year, we'll also support that members can be invited by email.</p>
-<p>Members can publicly show or hide their membership of the community as they see fit.</p>
+<p>Members can be invited from Zenodo's users. By end of the year, we'll also support that members can be invited by email. Members can publicly show or hide their membership of the community as they see fit.</p>
 <p><img src="members.png" width="100%"/></p>
 
 </p>
@@ -215,9 +214,9 @@
 <p>New submissions to a community now by default goes through our new community review feature.</p>
 <ul>
 <li><strong>Published on accept</strong>: Records submitted to a community is not published until the community curator accepts the request.</li>
-<li><strong>Curators can edit</strong>: Community curators are now able to edit the record submitted by the uploader.</li>
+<li><strong>Curators can edit</strong>: Community curators are now able to edit the record submitted by the uploader prior to being published.</li>
 <li><strong>Communication</strong>: Uploaders and curators can communicate to e.g. ask for clarification.</li>
-<li><strong>Submit to one</strong>: Drafts can only be submitted to one community. Once published, a record can still be included in other communities.</li>
+<li><strong>Submit to one</strong>: Drafts can only be submitted to one community. Once published, a record can still be submitted to multiple communities.</li>
 </ul>
 <p>The review feature is optional and you can still publish your record immediately by not submitting it to a community (e.g. if it's declined by the community curator). After the record is published you can also still request to have it included in multiple communities.</p>
 <p><img src="review.png" width="100%"/></p>
@@ -228,6 +227,7 @@
         <p>
 <p>As briefly described in the <a href="#communities-members">Members</a>-section, curators are now able to edit the metadata of published records. Similarly, curators can during reviews edit both the metadata and files of the records submitted by the uploader to the community.</p>
 <p>Modification of files in published records still has to go through the Zenodo support line (we have a 1-month grace period in which we allow addition/removal/modificaiton of files after which modifications are only exceptionally granted).</p>
+<p>Note, that there's a transition period of 6 months for records submitted prior to Oct 13, 2023 in which these records will not be editable by curators. See details in <a href="../whats-changed/#curatorsedit">what's changed</a></p>
 
 </p>
         <h3 id="communities-branding" class="docs">Communities: Branding <small><a href="#communities-branding" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
@@ -251,7 +251,7 @@
 <p><img src="preview.png" width="100%" /></p>
 
 </p>
-        <h3 id="deposit" class="docs">Deposit: Visibility <small><a href="#deposit" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="deposit-visibility" class="docs">Deposit: Visibility <small><a href="#deposit-visibility" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
 <p>We have significantly improved the sharing capabilities in the new Zenodo (see <a href="#communities">communities</a> and <a href="#sharing">sharing</a> sections). This means that we have changed the previous open, embargoed, restricted and closed access right mode into a single <strong>visibility</strong> setting that can be either:</p>
@@ -262,38 +262,38 @@
 <p><img src="visibility.png" /></p>
 
 </p>
-        <h3 id="deposit" class="docs">Deposit: Creators/affiliations auto-completion from ORCID and ROR <small><a href="#deposit" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="deposit-creators" class="docs">Deposit: Creators/affiliations auto-completion from ORCID and ROR <small><a href="#deposit-creators" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
-<p>We've significantly improved our creators/contributors fields. Creators can now be auto-completed from <a href="https://orcid.org">ORCID</a>, and affiliations can be auto-completed from <a href="https://ror.org">ROR</a>. We've also split the full name into a family name and given names fields to improve the reliability of our automatic citation generation. Organisational names is still supported as creators.</p>
+<p>We've significantly improved our creators/contributors fields. Creators can now be auto-completed from <a href="https://orcid.org">ORCID</a>, and affiliations can be auto-completed from <a href="https://ror.org">ROR</a>. We've also split the full name into a family name and given names fields to improve the reliability of our automatic citation generation. Organisational names are also supported as creators.</p>
 <p><img src="orcid.png" width="100%" /></p>
 
 </p>
-        <h3 id="deposit" class="docs">Deposit: License selector <small><a href="#deposit" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="deposit-license" class="docs">Deposit: License selector <small><a href="#deposit-license" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
 <p>We've improved our license selector to provide better defaults as well as improved search capabilities. In addition we've also added support for adding multiple licenses, as well as custom rights statements.</p>
 <p><img src="license.png" width="100%" /></p>
 
 </p>
-        <h3 id="deposit" class="docs">Deposit: Funding selector <small><a href="#deposit" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="deposit-funding" class="docs">Deposit: Funding selector <small><a href="#deposit-funding" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
 <p>Our funding selector has also been improved in a similar way to the license selector. We've also extended the support so you can link to grants not yet available in our award database.</p>
 <p><img src="award.png" width="100%" /></p>
 
 </p>
-        <h3 id="deposit" class="docs">Deposit: Default file preview <small><a href="#deposit" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="deposit-filepreview" class="docs">Deposit: Default file preview <small><a href="#deposit-filepreview" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
 <p>You can now select which file by default should be previewed on the record landing page.</p>
 <p><img src="files.png" width="100%" /></p>
 
 </p>
-        <h3 id="deposit" class="docs">Deposit: Imprecise dates <small><a href="#deposit" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="deposit-dates" class="docs">Deposit: Imprecise dates <small><a href="#deposit-dates" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
-<p>We've further added support for imprecise dates via the <a href="https://www.loc.gov/standards/datetime/">Extended Date Time Format</a> syntax (level 0). This is important e.g. for older content where may not know a precise date, but only the month or year or range of year.</p>
+<p>We've further added support for imprecise dates via the <a href="https://www.loc.gov/standards/datetime/">Extended Date Time Format</a> syntax (level 0). This is important e.g. for older content where you may not know a precise date, but only the month, year or range of years.</p>
 <p>Examples of imprecise dates:</p>
 <ul>
 <li><code>2023-09</code> - The month of September 2023.</li>
@@ -302,10 +302,10 @@
 </ul>
 
 </p>
-        <h3 id="deposit" class="docs">Deposit: Subjects <small><a href="#deposit" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="deposit-subjects" class="docs">Deposit: Subjects <small><a href="#deposit-subjects" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
-<p>Our new subjects feature has been improved. We'll in the coming months be importing domain-specific vocabularies so records can be tagged e.g. Medical Subject Headings (MeSH).</p>
+<p>Our new subjects feature has been improved. We'll in the coming months be importing domain-specific vocabularies so records can be tagged with terms from e.g. Medical Subject Headings (MeSH).</p>
 
 </p>
         <h3 id="sharing-link" class="docs">Sharing: Get a link <small><a href="#sharing-link" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
@@ -339,7 +339,7 @@
 <p><img src="profile.png" /></p>
 <h4>Profile visibility</h4>
 <p>Under the profile preferences you can set your profile and email visibility, which determines whether or not people can invite you to communities and what they'll be able to see. It is currently not yet possible to change the avatar which is automatically generated.</p>
-<p>Note: For privacy reasons, all users by default have a hidden profile and email visibility.</p>
+<p>The setting defaults to public profile visibility but with hidden email visibility.</p>
 <p><img src="profile-settings.png"  width="100%"/></p>
 
 </p>
@@ -365,7 +365,7 @@
 <p>You're now able to login to Zenodo with your institutional account if your institution is part of eduGAIN. The new service is provided via the <a href="http://www.openaire.eu/our-authentication-and-authorisation-infrastructure">OpenAIRE AAI</a> which also provide access to EOSC Core services (European Open Science Cloud).</p>
 <p><img src="openaire.png" /></p>
 <h4>Export formats</h4>
-<p>We now have support for DataCite JSON v4.3 and upgraded the DataCite XML to v4.3. This is in addition to our already supported export formats: JSNON, JSON-LD, CSL, Dublin Core, MARCXML, BibTeX, DCAT and GeoJSON.</p>
+<p>We now have support for DataCite JSON v4.3 and upgraded the DataCite XML to v4.3. This is in addition to our already supported export formats: JSON, JSON-LD (Schema.org), Citation Style Language JSON (CSL), Dublin Core, MARCXML, BibTeX, DCAT and GeoJSON.</p>
 <h4>REST API</h4>
 <p>Under the hood, Zenodo is now driven by a powerful and heavily expanded REST API. You can find the documentation to the new REST API on the <a href="https://inveniordm.docs.cern.ch/reference/rest_api_index/">InvenioRDM reference pages</a>.</p>
 
