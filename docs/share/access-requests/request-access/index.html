@@ -25,9 +25,9 @@
 <meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
 
 <meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
-<link rel="stylesheet" href="../../static/zenodo.css">
-<link rel="stylesheet" href="../../static/style.css">
-<link rel="stylesheet" href="../../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../../static/style.css">
+<link rel="stylesheet" href="../../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
 <title>Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -70,16 +70,16 @@
 
 
   
-  <li><a href="../../">Help</a></li>
+  <li><a href="../../../../">Help</a></li>
 
   
-  <li><a href="../../faq/">FAQ</a></li>
+  <li><a href="../../../../faq/">FAQ</a></li>
 
   
-  <li class="active"><a href="../">Docs</a></li>
+  <li class="active"><a href="../../../">Docs</a></li>
 
   
-  <li><a href="../../guides/">Guides</a></li>
+  <li><a href="../../../../guides/">Guides</a></li>
 
 
           </div>
@@ -97,20 +97,24 @@
     <div class="col-md-4">
         
 <div class="panel panel-default">
-  <div class="panel-heading"><strong><a href="./">Collaborate and share</a></strong></div>
+  <div class="panel-heading"><strong><a href="../../">Collaborate and share</a></strong></div>
   <div class="list-group">
           
-          <a href="link-sharing/" class="list-group-item"">Link sharing</a>
+          <a href="../../link-sharing/" class="list-group-item"">Link sharing</a>
           
-          <a href="access-requests/" class="list-group-item"">Access requests</a>
+          <a href="../" class="list-group-item active"">Access requests</a>
           
-          <a href="submit-for-review/" class="list-group-item"">Submit for review</a>
+          <a href="./" class="sub list-group-item highlight">Request access</a>
           
-          <a href="submit-to-community/" class="list-group-item"">Submit to community</a>
+          <a href="../allow-requests/" class="sub list-group-item">Allow access requests</a>
           
-          <a href="manage-submissions/" class="list-group-item"">Manage your submissions</a>
+          <a href="../../submit-for-review/" class="list-group-item"">Submit for review</a>
           
-          <a href="membership-invitations/" class="list-group-item"">Membership invitations</a>
+          <a href="../../submit-to-community/" class="list-group-item"">Submit to community</a>
+          
+          <a href="../../manage-submissions/" class="list-group-item"">Manage your submissions</a>
+          
+          <a href="../../membership-invitations/" class="list-group-item"">Membership invitations</a>
   </div>
 </div>
 
@@ -118,50 +122,138 @@
     <div class="col-md-8">
       
 <ol class="breadcrumb">
-    <li><a href="../">Docs</a></li>
+    <li><a href="../../../">Docs</a></li>
     
-    <li>Collaborate and share</li>
+    <li><a href="../../">Collaborate and share</a></li>
+    
+    
+    <li><a href="../">Access requests</a></li>
+    
+    
+    <li>Request access</li>
+    
+    
     
 </ol>
 
       <div class="docs-blocks">
-      <h1>Collaborate and share</h1>
+      <h1>Request access</h1>
       
       <hr />
-      
-      
-        
-
-
+      <p>The following sections explain how to request access to restricted files in a record. The owner of the record can choose who is able to request access (one or both of):</p>
 <ul>
-    <li>
-    <a href="link-sharing/">Link sharing</a>
-    </li>
-    <li>
-    <a href="access-requests/">Access requests</a>
-    <ul>
-        <li><a href="access-requests/request-access/">Request access</a>
-        <li><a href="access-requests/allow-requests/">Allow access requests</a>
-    </ul>
-    </li>
-    <li>
-    <a href="submit-for-review/">Submit for review</a>
-    </li>
-    <li>
-    <a href="submit-to-community/">Submit to community</a>
-    </li>
-    <li>
-    <a href="manage-submissions/">Manage your submissions</a>
-    <ul>
-        <li><a href="manage-submissions/view-submissions/">View submissions</a> &mdash; Learn how to view records in review and find their associated review request.
-        <li><a href="manage-submissions/cancel-submissions/">Cancel/withdraw submission</a> &mdash; Learn how to withdraw a record which was submitted for review to a community.
-        <li><a href="manage-submissions/reply-comments/">Reply/edit/delete comments</a> &mdash; Learn how to reply to comments, as well as how to edit/delete comments.
-    </ul>
-    </li>
-    <li>
-    <a href="membership-invitations/">Membership invitations</a>
-    </li>
+<li><strong>Guests</strong> - will be granted access via a secret link that expires after a duration defined by the owner.</li>
+<li><strong>Users</strong> - will be granted permanent access via their user account (until revoked by the owner).</li>
 </ul>
+<p>Learn how to request access:</p>
+
+      
+      <ul>
+        
+        <li><a href="#guest">Request access as guest</a></li>
+        
+        
+        
+        
+        
+        <li><a href="#user">Request access as authenticated user</a></li>
+        
+        
+        
+        
+        
+        <li><a href="#view">View my access requests</a></li>
+        
+        
+        
+      </ul>
+      
+        <h3 id="guest" class="docs">Request access as guest <small><a href="#guest" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Go to the record you would like to request access to. If you're able to request access as a guest, you will see the request access form.</p>
+
+        
+            <p><img src="guest.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Fill in:</p>
+<ul>
+<li>Your <strong>email address</strong></li>
+<li>Your <strong>full name</strong></li>
+<li>Optionally, write a <strong>message</strong> to the owner (in particular if the owner has specified conditions under which they give access)</li>
+<li>Tick the checkbox that you agree to that your full name and email address is shared with the record owners</li>
+</ul>
+<p>Finally click <strong>Request access</strong>-button to submit your request.</p>
+
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>To complete your request, you need to verify your email address by clicking the link in an email which we have sent to your address.</p>
+
+        
+            <p><img src="confirm.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="user" class="docs">Request access as authenticated user <small><a href="#user" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Go to the record you would like to request access to. If you're able to request access as a user, you will see the request access form.</p>
+
+        
+            <p><img src="user.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Fill in:</p>
+<ul>
+<li>Optionally, a <strong>message</strong> to the owner (in particular if the owner has specified conditions under which they give access)</li>
+<li>Tick the checkbox that you agree to that your full name and email address is shared with the record owners</li>
+</ul>
+<p>Finally click <strong>Request access</strong>-button to submit your request.</p>
+
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>You will be redirected to the request access page. The</p>
+
+        
+            <p><img src="request.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="view" class="docs">View my access requests <small><a href="#view" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>You can view all</p>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Go to <strong>My requests</strong> by click <strong>My dashboard</strong> in the header, and afterwards click <strong>My requests</strong> in the tab menu.</p>
+
+        
+    </div>
+</div>
       </div>
     </div>
 </div>
