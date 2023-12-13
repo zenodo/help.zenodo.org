@@ -312,14 +312,14 @@
     <div id="cstatistics-13" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="hstatistics-13">
       <div class="panel-body">
         <p>For each view/download event, we track an anonymized visitor ID. This anonymized visitor ID changes for a user every 24 hours, hence a user viewing the same record on two different days will have two different anonymized visitor IDs. The reason we track an anonymized visitor ID is in order to count unique views and downloads.</p>
-<p>For security purposes, we also keep a web server access log which includes your <a href="https://en.wikipedia.org/wiki/IP_address">IP address</a> and your browser’s <a href="https://en.wikipedia.org/wiki/User_agent">user agent</a> string. This web server access log is automatically deleted after maximum 1 year and is also strictly separated from the usage statistics collection.</p>
+<p>For security purposes, we also keep a web server access log which includes your <a href="https://en.wikipedia.org/wiki/IP_address">IP address</a> and your browser’s <a href="https://en.wikipedia.org/wiki/User_agent">user agent</a> string. This web server access log is automatically deleted after 1 year max. and is also strictly separated from the usage statistics collection.</p>
 <p>The anonymized visitor ID is generated from a personal identifier such as:</p>
 <ol>
 <li>a user ID (e.g. if you are logged in on zenodo.org),</li>
 <li>a session ID,</li>
 <li>or an IP address and your browser’s user-agent string.</li>
 </ol>
-<p>We combine the personal identifier with a random text value (a salt) and apply a one-way <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">cryptographic hash function</a> to scramble the data. The salt (random text value) is thrown away and regenerated every 24 hours. Using and afterwards throwing away the random salt, ensures that the anonymized visitor ID is fully random.</p>
+<p>We combine the personal identifier with a random text value (a salt) and apply a one-way <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">cryptographic hash function</a> to scramble the data. The salt (random text value) is thrown away and regenerated every 24 hours. Using and discarding the random salt afterwards ensures that the anonymized visitor ID is fully random.</p>
 
       </div>
     </div>
@@ -351,7 +351,7 @@
     </div>
     <div id="cstatistics-15" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="hstatistics-15">
       <div class="panel-body">
-        <p>We share <em>aggregated</em> usage statistics with <a href="https://usagecounts.openaire.eu/">OpenAIRE Usage Counts</a> as well as the <a href="https://github.com/datacite/sashimi">DataCite Sashimi</a> service. Note, that only aggregated usage statistics is being shared, whichdo not include any anonymized visitor IDs.</p>
+        <p>We share <em>aggregated</em> usage statistics with <a href="https://usagecounts.openaire.eu/">OpenAIRE Usage Counts</a> as well as the <a href="https://github.com/datacite/sashimi">DataCite Sashimi</a> service. Note, that only aggregated usage statistics are shared, which do not include any anonymized visitor IDs.</p>
 
       </div>
     </div>
