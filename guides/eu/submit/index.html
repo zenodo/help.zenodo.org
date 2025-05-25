@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="../../../static/style.css">
 <link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
-<title>View my communities | Zenodo</title>
+<title>Submitting content | Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -76,10 +76,10 @@
   <li><a href="../../../faq/">FAQ</a></li>
 
   
-  <li class="active"><a href="../../">Docs</a></li>
+  <li><a href="../../../docs/">Docs</a></li>
 
   
-  <li><a href="../../../guides/">Guides</a></li>
+  <li class="active"><a href="../../">Guides</a></li>
 
 
           </div>
@@ -97,22 +97,24 @@
     <div class="col-md-4">
         
 <div class="panel panel-default">
-  <div class="panel-heading"><strong><a href="../">Communities</a></strong></div>
+  <div class="panel-heading"><strong><a href="../">Horizon Europe Guidance</a></strong></div>
   <div class="list-group">
           
-          <a href="../about-communities/" class="list-group-item"">About communities</a>
+          <a href="../about-eu-open-research-repository/" class="list-group-item"">About EU Open Research Repository</a>
           
-          <a href="../creating-a-community/" class="list-group-item"">Create new community</a>
+          <a href="../navigation/" class="list-group-item"">Navigating EU Open Research Repository</a>
           
-          <a href="./" class="list-group-item active"">View my communities</a>
+          <a href="../using-your-community/" class="list-group-item"">Use your EU Project Community</a>
           
-          <a href="../manage-community-settings/" class="list-group-item"">Manage community settings</a>
+          <a href="../browse/" class="list-group-item"">Browse collections</a>
           
-          <a href="../manage-members/" class="list-group-item"">Manage members</a>
+          <a href="../requesting-a-community/" class="list-group-item"">Request an EU Project Community</a>
           
-          <a href="../review-submissions/" class="list-group-item"">Review submissions</a>
+          <a href="./" class="list-group-item active"">Submitting content</a>
           
-          <a href="../curate/" class="list-group-item"">Curate records</a>
+          <a href="metadata-checks/" class="sub list-group-item">Metadata checks</a>
+          
+          <a href="file-checks/" class="sub list-group-item">File format checks</a>
   </div>
 </div>
 
@@ -120,29 +122,70 @@
     <div class="col-md-8">
       
 <ol class="breadcrumb">
-    <li><a href="../../">Docs</a></li>
-    
-    <li><a href="../">Communities</a></li>
-    
-    
-    <li>View my communities</li>
-    
-    
+    <li><a href="../../../docs/">Docs</a></li>
 </ol>
 
       <div class="docs-blocks">
-      <h1>View my communities</h1>
+      <h1>Submitting content</h1>
       
       <hr />
-      <p>The following section describes how to browse all the communities of which you are an owner or a member.</p>
+      <p>Records can be submitted to the EU Open Research Repository in 3 ways (see <a href="https://zenodo.org/communities/eu/curation-policy">curation policy</a>):</p>
+<ul>
+<li><strong>Via EU Project Community (preferred)</strong> - all EU projects can <a href="../requesting-a-community/">request an EU Project Community</a> and self-manage submissions. This is preferred submission method, especially if you plan to submit more than a couple of records.</li>
+<li><strong>Via direct submissions (single submissions only)</strong> - if you only need to submit 1-2 records you can submit them directly to the EU Open Research Repository. These submission are curated by Zendo staff, and have a longer delay in getting approved than if you submit via your own self-managed EU Project Community.</li>
+<li><strong>Via automated harvesting</strong> - we automatically harvest records deposited in Zenodo and linked with a grants from the European Commission (i.e. if you haven't learned of the EU Open Research Repository or forgot to use one of above methods). The process is fully automated and only records which can be automatically verified is added. This means even if the records is linked to an EU grant, it's not sure the record will be added to the EU Open Research Repository.</li>
+</ul>
+<h4>Requirements</h4>
+<p>All submissions to the EU Open Research Repository are subject to stricter metadata requirements than Zenodo it self. In particular submission must pass:</p>
+<ul>
+<li><strong><a href="metadata-checks/">Metadata checks</a>:</strong>  Checks for compliance with the <a href="https://zenodo.org/communities/eu/pages/open-science">Horizon Europe open science requirements</a>.</li>
+<li><strong><a href="file-checks/">File format checks</a>:</strong> Checks for usage of open or scientific file formats for improved reusability and preservation of the files.</li>
+</ul>
+<p>In this guide you find:</p>
 
       
-        <h3 id="view" class="docs">View my communities <small><a href="#view" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+      <ul>
+        
+        <li><a href="#overview">Overview</a></li>
+        
+        
+        
+        <li><a href="#eu-project-community">Submit via EU Project Community (preferred)</a></li>
+        
+        
+        
+        
+        <li><a href="#direct">Submit directly (single submissions only)</a></li>
+        
+        
+        
+        
+      </ul>
+      
+        <h3 id="overview" class="docs">Overview <small><a href="#overview" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>My dashboard</strong> menu item in the header.</p>
+        <p>Click the yellow <strong>How to submit</strong>-button in the header (see <a href="../navigation/#submit">navigation</a>). The page gives a quick overview of submission methods, and what content is in scope for the repository:</p>
+
+        
+            <p><img src="step1.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="eu-project-community" class="docs">Submit via EU Project Community (preferred) <small><a href="#eu-project-community" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>First, find the EU Project Community you want to submit to:</p>
+<ul>
+<li>If you're a member of the community, you can find it under <a href="https://zenodo.org/me/communities"><strong>My Dashboard &gt; My communities</strong></a>.</li>
+<li>If you're <strong>NOT</strong> a member of the community, you can find it under <a href="https://zenodo.org/communities/eu/browse/subcommunities"><strong>Browse &gt; Projects</strong></a> (see <a href="../browse/#projects">browse by projects</a>).</li>
+</ul>
+<p>Alternatively, the owner of the community may have send you a direct submission link.</p>
+<p><strong>Don't have an EU Project Community?</strong> If you don't already have an EU Project Community, you can <a href="../requesting-a-community/">request a new one</a> and start using it immediately while you wait for the final approval).</p>
 
         
     </div>
@@ -150,10 +193,44 @@
         <div class="row">
     <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>Communities</strong> in the tab. All communities of which you are an owner or a member will be shown the list.</p>
+        <p>Once, you have identified the EU Project Community, you can use one of two methods:</p>
+<ul>
+<li><a href="../../../docs/share/submit-for-review/">Submit for review</a> - for <em>new</em> submissions not already published on Zenodo.</li>
+<li><a href="../../../docs/share/submit-to-community/">Submit to community</a> - for <em>existing</em> records that you have already published on Zenodo.</li>
+</ul>
 
         
-            <p><img src="mycommunities.png" class="img-thumbnail"></p>
+    </div>
+</div>
+        <h3 id="direct" class="docs">Submit directly (single submissions only) <small><a href="#direct" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click the yellow <strong>How to submit</strong>-button in the header (see <a href="../navigation/#submit">navigation</a>).</p>
+
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Click <strong>Submit directly</strong> under Option 2:</p>
+
+        
+            <p><img src="step2.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>Follow our guide to <a href="../../../docs/deposit/create-new-upload/">create a new upload</a>. Note, submission to the EU Open Research Repository are subject to stricter metadata requirements. See</p>
+<ul>
+<li><a href="metadata-checks/">Metadata checks</a></li>
+<li><a href="file-checks/">File format checks</a></li>
+</ul>
+
         
     </div>
 </div>

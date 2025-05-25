@@ -25,11 +25,11 @@
 <meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
 
 <meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
-<link rel="stylesheet" href="../../../static/zenodo.css">
-<link rel="stylesheet" href="../../../static/style.css">
-<link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../../static/style.css">
+<link rel="stylesheet" href="../../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
-<title>View my communities | Zenodo</title>
+<title>Metadata checks | Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -70,16 +70,16 @@
 
 
   
-  <li><a href="../../../">Help</a></li>
+  <li><a href="../../../../">Help</a></li>
 
   
-  <li><a href="../../../faq/">FAQ</a></li>
+  <li><a href="../../../../faq/">FAQ</a></li>
 
   
-  <li class="active"><a href="../../">Docs</a></li>
+  <li><a href="../../../../docs/">Docs</a></li>
 
   
-  <li><a href="../../../guides/">Guides</a></li>
+  <li class="active"><a href="../../../">Guides</a></li>
 
 
           </div>
@@ -97,22 +97,24 @@
     <div class="col-md-4">
         
 <div class="panel panel-default">
-  <div class="panel-heading"><strong><a href="../">Communities</a></strong></div>
+  <div class="panel-heading"><strong><a href="../../">Horizon Europe Guidance</a></strong></div>
   <div class="list-group">
           
-          <a href="../about-communities/" class="list-group-item"">About communities</a>
+          <a href="../../about-eu-open-research-repository/" class="list-group-item"">About EU Open Research Repository</a>
           
-          <a href="../creating-a-community/" class="list-group-item"">Create new community</a>
+          <a href="../../navigation/" class="list-group-item"">Navigating EU Open Research Repository</a>
           
-          <a href="./" class="list-group-item active"">View my communities</a>
+          <a href="../../using-your-community/" class="list-group-item"">Use your EU Project Community</a>
           
-          <a href="../manage-community-settings/" class="list-group-item"">Manage community settings</a>
+          <a href="../../browse/" class="list-group-item"">Browse collections</a>
           
-          <a href="../manage-members/" class="list-group-item"">Manage members</a>
+          <a href="../../requesting-a-community/" class="list-group-item"">Request an EU Project Community</a>
           
-          <a href="../review-submissions/" class="list-group-item"">Review submissions</a>
+          <a href="../" class="list-group-item active"">Submitting content</a>
           
-          <a href="../curate/" class="list-group-item"">Curate records</a>
+          <a href="./" class="sub list-group-item highlight">Metadata checks</a>
+          
+          <a href="../file-checks/" class="sub list-group-item">File format checks</a>
   </div>
 </div>
 
@@ -120,29 +122,54 @@
     <div class="col-md-8">
       
 <ol class="breadcrumb">
-    <li><a href="../../">Docs</a></li>
-    
-    <li><a href="../">Communities</a></li>
-    
-    
-    <li>View my communities</li>
-    
-    
+    <li><a href="../../../../docs/">Docs</a></li>
 </ol>
 
       <div class="docs-blocks">
-      <h1>View my communities</h1>
+      <h1>Metadata checks</h1>
       
       <hr />
-      <p>The following section describes how to browse all the communities of which you are an owner or a member.</p>
+      <p>Submissions to the EU Open Research Repository are automatically checked against the open science requirements in Horizon Europe. To learn more about the open science requirements please see:</p>
+<ul>
+<li><a href="https://zenodo.org/communities/eu/pages/open-science">Open Science in Horizon Europe</a></li>
+</ul>
+<p>The metadata checks are either:</p>
+<ul>
+<li><strong>required</strong> - you must fix the error in order to publish/submit for review.</li>
+<li><strong>recommended</strong> - you can publish/submit for review without fixing the recommendation.</li>
+</ul>
+<p>The guide covers the following:</p>
 
       
-        <h3 id="view" class="docs">View my communities <small><a href="#view" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+      <ul>
+        
+        <li><a href="#deposit-checks">Viewing metadata checks (as uploader)</a></li>
+        
+        
+        
+        
+        
+        
+        <li><a href="#request-checks">Viewing metadata checks (as curator)</a></li>
+        
+        
+        
+        
+        <li><a href="#required-checks">List of required metadata checks</a></li>
+        
+        
+        
+        <li><a href="#recommended-checks">List of recommended metadata checks</a></li>
+        
+        
+      </ul>
+      
+        <h3 id="deposit-checks" class="docs">Viewing metadata checks (as uploader) <small><a href="#deposit-checks" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>My dashboard</strong> menu item in the header.</p>
+        <p>During <a href="../../../../docs/deposit/create-new-upload/">creating a new upload</a>, click <strong>Save draft</strong> to see metadata validation errors.</p>
 
         
     </div>
@@ -150,13 +177,101 @@
         <div class="row">
     <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p>Click <strong>Communities</strong> in the tab. All communities of which you are an owner or a member will be shown the list.</p>
+        <p>A summary of the errors are display in the header message (click links to jump to section).</p>
 
         
-            <p><img src="mycommunities.png" class="img-thumbnail"></p>
+            <p><img src="step2.png" class="img-thumbnail"></p>
         
     </div>
 </div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>Each section highlights the number of errors and recommendations:</p>
+
+        
+            <p><img src="step3.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">4</span></p></div>
+    <div class="col-md-11">
+        <p>Each field highlights the specific error or recommendation:</p>
+
+        
+            <p><img src="step4.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="request-checks" class="docs">Viewing metadata checks (as curator) <small><a href="#request-checks" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>During <a href="../../../../docs/communities/review-submissions/">review of submissions</a>, click the <strong>Checks</strong>-tab:</p>
+
+        
+            <p><img src="curator-step1.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>The <strong>Checks</strong>-tab will provide you an overview of which checks passed and failed. See <a href="../../../../docs/communities/review-submissions/#review">review of submissions</a> for how to edit the record.</p>
+
+        
+            <p><img src="curator-step2.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="required-checks" class="docs">List of required metadata checks <small><a href="#required-checks" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<ul>
+<li><strong>Submissions must have a grant/award from the European Commission</strong> - The EU Open Research Repository only accepts submissions stemming from one of EU’s research and innovation funding programmes, which currently include Horizon Europe (including ERC, MSCA), earlier Framework Programmes (eg Horizon 2020), as well as Euratom.<ul>
+<li>Note, if you submit to an EU Project Community, your upload must come from the grant associated with the community.</li>
+<li>See TODO</li>
+</ul>
+</li>
+<li><strong>Journal articles must specify the publishing venue</strong> - To comply with Horizon Europe's open science requirements, peer-reviewed scientific publications must specify the publishing venue (e.g. journal) it was published in.<ul>
+<li>See TODO</li>
+</ul>
+</li>
+<li><strong>All submissions must specify licensing terms</strong> - To comply with Horizon Europe's open science requirements, a submission must specify the licensing terms.<ul>
+<li>See how to manage <a href="../../../../docs/deposit/describe-records/licenses/">license and rights</a>.</li>
+</ul>
+</li>
+</ul>
+
+</p>
+        <h3 id="recommended-checks" class="docs">List of recommended metadata checks <small><a href="#recommended-checks" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>The recommended checks will warn you in case there's a problem, but you will still be able to submit for review.</p>
+<p><strong>Persistent identifiers for authors</strong></p>
+<p>Persistent identifiers for authors are mandatory in the Horizon Europe open science requirements, but for specific use cases they may not be possible to provide and thus the following checks are only recommended:</p>
+<ul>
+<li><p><strong>All creators should have a persistent identifier (e.g. an ORCID)</strong> - To comply with Horizon Europe's open science requirements, you should provide persistent identifiers for creators (e.g., ORCID, GND, or ISNI).</p>
+</li>
+<li><p><strong>All contributors should have a persistent identifier (e.g. an ORCID)</strong> - To comply with Horizon Europe's open science requirements, you should provide persistent identifiers for contributors (e.g., ORCID, GND, or ISNI).</p>
+</li>
+</ul>
+<p><strong>License requirements per resource type</strong></p>
+<p>The following requirements are checked as recommended, when we detect that the default license is not used (see <a href="../../../../docs/deposit/describe-records/licenses/">license and rights</a> for how to change license):</p>
+<ul>
+<li><p><strong>Journal articles should have a CC-BY license or license with equivalent rights</strong> - To comply with Horizon Europe's open science requirements, peer-reviewed scientific publications must be available under the latest Creative Commons Attribution International license (CC-BY) or a license with equivalent rights.</p>
+</li>
+<li><p><strong>Books should have a CC-BY, CC-BY-NC or CC-BY-ND license</strong> To comply with Horizon Europe's open science requirements, monographs or other long-text must be available under the latest Creative Commons Attribution International license (CC-BY) or a license with equivalent rights. Monographs and other long-texts may exclude commercial or derivative works (i.e. CC-BY-NC or CC-BY-ND).</p>
+</li>
+<li><p><strong>Submissions (except journal articles, books, or software) should have CC BY license, CC0 dedication or equivalent</strong> - To comply with Horizon Europe's open science requirements, all submission except journal articles, books and software must be available under the latest available Creative Commons Attribution International license (CC-BY), or Creative Commons Public Domain Dedication (CC0) or a license/dedication with equivalent rights (following the principle as open as possible, as closed as necessary and with exceptions possible).</p>
+</li>
+<li><p><strong>Software should have an OSI-approved license</strong> - To comply with Horizon Europe's open science requirements, software should be available under a OSI-approved license (following the principle as open as possible, as closed as necessary and with exceptions possible).</p>
+</li>
+</ul>
+
+</p>
       </div>
     </div>
 </div>
