@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="../../../../static/style.css">
 <link rel="stylesheet" href="../../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
-<title>Licenses and rights | Zenodo</title>
+<title>Keywords and subjects | Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -118,11 +118,11 @@
           
           <a href="../descriptions/" class="sub list-group-item">Descriptions</a>
           
-          <a href="./" class="sub list-group-item highlight">Licenses and rights</a>
+          <a href="../licenses/" class="sub list-group-item">Licenses and rights</a>
           
           <a href="../funding/" class="sub list-group-item">Funding information</a>
           
-          <a href="../keywords-and-subjects/" class="sub list-group-item">Keywords and subjects</a>
+          <a href="./" class="sub list-group-item highlight">Keywords and subjects</a>
           
           <a href="../contributors/" class="sub list-group-item">Contributors</a>
           
@@ -146,77 +146,84 @@
     <li><a href="../">Describe records</a></li>
     
     
-    <li>Licenses and rights</li>
+    <li>Keywords and subjects</li>
     
     
     
 </ol>
 
       <div class="docs-blocks">
-      <h1>Licenses and rights</h1>
+      <h1>Keywords and subjects</h1>
       
       <hr />
-      <p>The <strong>license</strong> field is a required field. Providing the license for your record is important for other users to be able to reuse your upload. Zenodo defaults to the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> (CC-BY) license.</p>
-<p><img src="default-license.png" width="100%" /></p>
-<p>We recommend the following resources to help you choose the license:</p>
+      <p>The <strong>keywords and subjects</strong> field can be used to associate a record to custom tags or to controlled vocabularies. Providing such information helps making records more discoverable.</p>
+<p>A keyword/subject can be either a:</p>
 <ul>
-<li><a href="https://choosealicense.com">choosealicense.com</a> - useful especially for software</li>
-<li><a href="http://www.openaire.eu/how-do-i-license-my-research-data">OpenARE Guide for Researchers</a> - useful especially for research data.</li>
+<li>Controlled vocabulary term</li>
+<li>Custom keyword/subject</li>
 </ul>
-<p>Once you have chosen a license, the following paragraphs help you choose it in Zenodo.</p>
+<p><img src="subjects.png" width="100%" /></p>
+<p>Use a <strong>controlled vocabulary term</strong> if the term is covered by one of our currently supported controlled vocabularies:</p>
+<ul>
+<li><a href="https://op.europa.eu/en/web/eu-vocabularies/euroscivoc">European Science Vocabulary (EuroSciVoc)</a></li>
+<li><a href="http://www.nlm.nih.gov/mesh/">Medical Subject Headings (MeSH)</a></li>
+<li><a href="https://www.eionet.europa.eu/gemet/en/about/">General Multilingual Environmental Thesaurus (GEMET)</a></li>
+</ul>
+<p>Use a <strong>custom keyword/subject</strong> otherwise.</p>
 
       
-        <h3 id="change" class="docs">Change a standard license <small><a href="#change" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="" class="docs">Add a controlled vocabulary term <small><a href="#" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>Click the <strong>Edit</strong> button next to the Creative Commons Attribution 4.0 International license (see image above).</p>
+        <p>Click the field and search for terms from one of our currently supported controlled vocabularies.</p>
 
+        
+            <p><img src="subjects-controlled.png" class="img-thumbnail"></p>
         
     </div>
 </div>
         <div class="row">
     <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p>Choose one of the widely recommended used licenses presented, or search/browse for a standard licenses. Zenodo relies on the widely used <a href="https://spdx.org/licenses/">SPDX list of license</a>. If you cannot find your license you can add a custom license (see next section).</p>
+        <p>Select the line corresponding to the desired controlled vocabulary and term.</p>
 
-        
-            <p><img src="chooser.png" class="img-thumbnail"></p>
         
     </div>
 </div>
-        <h3 id="custom" class="docs">Add a custom license <small><a href="#custom" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="" class="docs">Add a custom keyword/subject <small><a href="#" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
-        <p>
-<p>If you cannot find a standard license, you can add a custom license.</p>
-
-</p>
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>Click the <strong>Add custom</strong> button (see top image).</p>
+        <p>Click the field and type the custom keyword/subject.</p>
 
+        
+            <p><img src="subjects-custom.png" class="img-thumbnail"></p>
         
     </div>
 </div>
         <div class="row">
     <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p>Provide the title, and optionally describe and link of the license.</p>
+        <p>Select the line appering as "Add ..."</p>
 
-        
-            <p><img src="custom-license.png" class="img-thumbnail"></p>
         
     </div>
 </div>
-        <h3 id="mixed" class="docs">Mixed license uploads <small><a href="#mixed" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="" class="docs">Remove a keyword/subject <small><a href="#" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
-        <p>
-<p>You may experience that files you upload are under different licenses (e.g. software under the MIT license, but documentation under CC-BY license). In such cases you can declare all the licenses as done in the example below:</p>
-<p><img src="multiple.png"  width="100%"/></p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Keywords/subjects can be removed, by clicking the <i class="fa fa-times"></i>-icon next to each entry.</p>
 
-</p>
+        
+            <p><img src="subjects-remove.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
       </div>
     </div>
 </div>
