@@ -25,11 +25,11 @@
 <meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
 
 <meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
-<link rel="stylesheet" href="../../static/zenodo.css">
-<link rel="stylesheet" href="../../static/style.css">
-<link rel="stylesheet" href="../../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../../static/style.css">
+<link rel="stylesheet" href="../../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
-<title>Deposit | Zenodo</title>
+<title>Funding information | Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -70,16 +70,16 @@
 
 
   
-  <li><a href="../../">Help</a></li>
+  <li><a href="../../../../">Help</a></li>
 
   
-  <li><a href="../../faq/">FAQ</a></li>
+  <li><a href="../../../../faq/">FAQ</a></li>
 
   
-  <li class="active"><a href="../">Docs</a></li>
+  <li class="active"><a href="../../../">Docs</a></li>
 
   
-  <li><a href="../../guides/">Guides</a></li>
+  <li><a href="../../../../guides/">Guides</a></li>
 
 
           </div>
@@ -97,20 +97,38 @@
     <div class="col-md-4">
         
 <div class="panel panel-default">
-  <div class="panel-heading"><strong><a href="./">Deposit</a></strong></div>
+  <div class="panel-heading"><strong><a href="../../">Deposit</a></strong></div>
   <div class="list-group">
           
-          <a href="about-records/" class="list-group-item"">About records</a>
+          <a href="../../about-records/" class="list-group-item"">About records</a>
           
-          <a href="create-new-upload/" class="list-group-item"">Create new upload</a>
+          <a href="../../create-new-upload/" class="list-group-item"">Create new upload</a>
           
-          <a href="describe-records/" class="list-group-item"">Describe records</a>
+          <a href="../" class="list-group-item active"">Describe records</a>
           
-          <a href="manage-files/" class="list-group-item"">Manage files</a>
+          <a href="../resource-type/" class="sub list-group-item">Resource types</a>
           
-          <a href="manage-records/" class="list-group-item"">Manage records</a>
+          <a href="../reserve-doi/" class="sub list-group-item">Digital Object Identifier (DOI)</a>
           
-          <a href="manage-versions/" class="list-group-item"">Manage versions</a>
+          <a href="../titles/" class="sub list-group-item">Titles</a>
+          
+          <a href="../publication-date/" class="sub list-group-item">Publication date</a>
+          
+          <a href="../creators/" class="sub list-group-item">Creators</a>
+          
+          <a href="../descriptions/" class="sub list-group-item">Descriptions</a>
+          
+          <a href="../licenses/" class="sub list-group-item">Licenses and rights</a>
+          
+          <a href="./" class="sub list-group-item highlight">Funding information</a>
+          
+          <a href="../contributors/" class="sub list-group-item">Contributors</a>
+          
+          <a href="../../manage-files/" class="list-group-item"">Manage files</a>
+          
+          <a href="../../manage-records/" class="list-group-item"">Manage records</a>
+          
+          <a href="../../manage-versions/" class="list-group-item"">Manage versions</a>
   </div>
 </div>
 
@@ -118,62 +136,111 @@
     <div class="col-md-8">
       
 <ol class="breadcrumb">
-    <li><a href="../">Docs</a></li>
+    <li><a href="../../../">Docs</a></li>
     
-    <li>Deposit</li>
+    <li><a href="../../">Deposit</a></li>
+    
+    
+    <li><a href="../">Describe records</a></li>
+    
+    
+    <li>Funding information</li>
+    
+    
     
 </ol>
 
       <div class="docs-blocks">
-      <h1>Deposit</h1>
+      <h1>Funding information</h1>
       
       <hr />
-      <div class="alert alert-info" role="alert"><strong>Want to test Zenodo?</strong> Use our sandbox environment on <a href="https://sandbox.zenodo.org">https://sandbox.zenodo.org</a> to play.</div><p>This section provides a comprehensive documentation on how you upload your research on Zenodo. See the <a href="../get-started/quickstart/">quick start</a> guide for short introduction to publishing your upload in 3 simple steps.</p>
+      <p>The <strong>funding</strong> field is a recommended field. Use funding to provide information about the awards or grants which funded the research output published in the record.</p>
+<p>A funding can be either a:</p>
+<ul>
+<li>Standard award/grant</li>
+<li>Custom award/grant</li>
+</ul>
+<p><img src="funding.png" /></p>
+<p>Choose <strong>standard awards/grants</strong> for awards/grants funded by one of the following organizations:</p>
+<ul>
+<li>National Institutes of Health (US)</li>
+<li>U.S. National Science Foundation (US)</li>
+<li>Swiss National Science Foundation (CH)</li>
+<li>UK Research and Innovation (GB)</li>
+<li>Foundation for Science and Technology (PT)</li>
+<li>European Commission (BE)</li>
+<li>Dutch Research Council (NL)</li>
+<li>National Agency for Research (FR)</li>
+<li>National Health and Medical Research Council (AU)</li>
+<li>Australian Research Council (AU)</li>
+</ul>
+<p>Choose <strong>custom awards/grants</strong> for awards/grants funded by other organizations. Please note that the funder must be registered in the <a href="https://ror.org/">Research Organization Registry (ROR)</a>.</p>
 
       
-        <h3 id="overview" class="docs">Overview <small><a href="#overview" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="" class="docs">Add an award/grant <small><a href="#" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
-        <p>
-<p>In this section, learn about the following topics:</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click the <strong>Add</strong> button (see top image).</p>
 
-</p>
         
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Search by award/grant name or number. Optionally narrow your search results by filtering by a specific funder.</p>
 
+        
+            <p><img src="funding-standard.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="" class="docs">Add a custom award/grant <small><a href="#" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click the <strong>Add custom</strong> button (see top image).</p>
 
-<ul>
-    <li>
-    <a href="about-records/">About records</a> &mdash; General information about records.
-    </li>
-    <li>
-    <a href="create-new-upload/">Create new upload</a> &mdash; Overview of how to create a new upload, add/remove files, fill metadata, save for later, set visibility, preview a record, apply an embargo and publish.
-    </li>
-    <li>
-    <a href="describe-records/">Describe records</a> &mdash; How to fill metadata for each specific field.
-    <ul>
-        <li><a href="describe-records/resource-type/">Resource types</a> &mdash; Select the right resource type.
-        <li><a href="describe-records/reserve-doi/">Digital Object Identifier (DOI)</a> &mdash; How to reserve a DOI for inclusion in files before publication.
-        <li><a href="describe-records/titles/">Titles</a> &mdash; How to add main title and additional titles.
-        <li><a href="describe-records/publication-date/">Publication date</a> &mdash; Learn to use date ranges or imprecise dates.
-        <li><a href="describe-records/creators/">Creators</a> &mdash; Learn how to add creators/authors for your record.
-        <li><a href="describe-records/descriptions/">Descriptions</a> &mdash; Learn how to add abstracts and notes.
-        <li><a href="describe-records/licenses/">Licenses and rights</a> &mdash; Learn to choose a license for your record.
-        <li><a href="describe-records/funding/">Funding information</a> &mdash; Learn to choose a funding for your record.
-        <li><a href="describe-records/contributors/">Contributors</a> &mdash; Learn to add persons/organisations that do not appear in the citation.
-    </ul>
-    </li>
-    <li>
-    <a href="manage-files/">Manage files</a> &mdash; Learn how to add/remove files to a draft and set which file to preview by default.
-    <ul>
-        <li><a href="manage-files/quota-increase/">Quota increase</a>
-    </ul>
-    </li>
-    <li>
-    <a href="manage-records/">Manage records</a> &mdash; Learn how browse your drafts/published records, how to edit the metadata of published records.
-    </li>
-    <li>
-    <a href="manage-versions/">Manage versions</a> &mdash; Learn how modify files by creating a new version.
-    </li>
-</ul>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Provide a <strong>funder</strong> by searching by name. Optionally provide the number, title, and URL of the award/grant.</p>
+
+        
+            <p><img src="funding-custom.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="" class="docs">Remove an award/grant <small><a href="#" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click the <strong>Remove</strong> button next to a funding to remove a funding from the list.</p>
+
+        
+            <p><img src="funding-remove-reorder.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <h3 id="" class="docs">Reorder an award/grant <small><a href="#" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Click and hold the <i class="fa fa-bars"></i>-icon. You can now drag and drop the funding into the desired order in the list.</p>
+
+        
+            <p><img src="funding-remove-reorder.png" class="img-thumbnail"></p>
+        
+    </div>
+</div>
       </div>
     </div>
 </div>
