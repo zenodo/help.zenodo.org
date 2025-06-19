@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="../../../../static/style.css">
 <link rel="stylesheet" href="../../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
-<title>Publication date | Zenodo</title>
+<title>Publisher | Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -112,7 +112,7 @@
           
           <a href="../titles/" class="sub list-group-item">Titles</a>
           
-          <a href="./" class="sub list-group-item highlight">Publication date</a>
+          <a href="../publication-date/" class="sub list-group-item">Publication date</a>
           
           <a href="../creators/" class="sub list-group-item">Creators</a>
           
@@ -124,7 +124,7 @@
           
           <a href="../contributors/" class="sub list-group-item">Contributors</a>
           
-          <a href="../publisher/" class="sub list-group-item">Publisher</a>
+          <a href="./" class="sub list-group-item highlight">Publisher</a>
           
           <a href="../funding/" class="sub list-group-item">Funding information</a>
           
@@ -148,58 +148,20 @@
     <li><a href="../">Describe records</a></li>
     
     
-    <li>Publication date</li>
+    <li>Publisher</li>
     
     
     
 </ol>
 
       <div class="docs-blocks">
-      <h1>Publication date</h1>
+      <h1>Publisher</h1>
       
       <hr />
-      <p>The <strong>publication date</strong> field is a required field. By default, it is set to the date the draft was created. If your upload was previously published somewhere else (e.g. a journal article), please use the date of the first publication. Note, that in addition to the publication date, we keep track of the date a record was uploaded to the repository.</p>
-<p><img src="publication-date.png" width="100%" /></p>
+      <p>The <strong>publisher</strong> field is a required field as it is needed to generate the citation. By default, it is set to "Zenodo". If your upload was previously published somewhere else (e.g. a journal article), please use the name of the original publisher.</p>
+<p><img src="publisher.png" width="100%" /></p>
 
       
-        <h3 id="edtf" class="docs">Imprecise dates (EDTF) <small><a href="#edtf" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
-<hr />
-        <p>
-<p>For older content you may not always know a precise publication date. In these cases you may use both imprecise dates and date ranges (using the <a href="https://www.loc.gov/standards/datetime/">Extended Date Time Format</a> Level 1).</p>
-
-</p>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">1</span></p></div>
-    <div class="col-md-11">
-        <p>Reduced precision for year and month: <code>2023-09</code> refers to the month of September 2023.</p>
-
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">2</span></p></div>
-    <div class="col-md-11">
-        <p>Reduced precision for year: <code>2023</code> refers to the calendar year 2023.</p>
-
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">3</span></p></div>
-    <div class="col-md-11">
-        <p>Time interval: <code>2023-01-01/2023-09-23</code> refers to the time interval beginning January 1st 2023 and ending on September 23rd 2023.</p>
-
-        
-    </div>
-</div>
-        <div class="row">
-    <div class="col-md-1"><p><span class="badge">4</span></p></div>
-    <div class="col-md-11">
-        <p>Time interval imprecise: <code>1939/1945</code> refers to the time interval beginning sometime in 1939 and ending sometime in 1945.</p>
-
-        
-    </div>
-</div>
       </div>
     </div>
 </div>
