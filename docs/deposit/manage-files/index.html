@@ -134,7 +134,7 @@
       <h1>Manage files</h1>
       
       <hr />
-      <div class="alert alert-warning" role="alert"><strong>Heads up</strong>: You CANNOT modify files <em>after</em> your record is published, instead use <a href="../manage-versions/">versioning</a>.</div><p>The following sections documents how to manage files for a draft and record. You can by default upload up to a 100 files and a total volume of 50GB (50.000.000.000 bytes).</p>
+      <p>The following sections document how to manage files for a draft and record. You can upload up to a 100 files and a total volume of 50GB (50,000,000,000 bytes).</p>
 
       
       <ul>
@@ -163,18 +163,22 @@
         <li><a href="#modify">Modify files after publication</a></li>
         
         
+        
+        
+        
+        
+        
       </ul>
       
         <h3 id="prepare" class="docs">Prepare files <small><a href="#prepare" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
-<p>We support file uploads up 50GB (= 50.000 MB) and max 100 files. See how to <a href="quota-increase/">request a quota increase</a>.</p>
-<p>Please take the following into consideration when you prepare your files for upload:</p>
+<p>We support file uploads up 50GB (= 50,000 MB) and max 100 files. If you would like to upload up to 200GB of data, please <a href="quota-increase/">request a quota increase</a>.</p>
+<p>We have the following recommendations for when you're preparing your files for upload:</p>
 <ul>
 <li><strong>20+ files</strong>: We recommend that you package them in a ZIP archive</li>
-<li><strong>Hidden files</strong>: We often see hidden files in ZIP archives like "__MACOSX", ".DS_Store", or "Thumbs.db" (see these guides on  <a href="https://stackoverflow.com/questions/10924236/mac-zip-compress-without-macosx-folder">Stack Overflow</a> and <a href="https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2">Microsoft</a> for how to remove them).</li>
-<li><strong>No changes</strong>: You CANNOT modify files after your record is published.</li>
-<li><strong>Use open non-proprietary formats</strong>:  For further guidance on preservation-friendly formats please see the following resources:<ul>
+<li><strong>Hidden files</strong>: We often see hidden files in ZIP archives like "__MACOSX", ".DS_Store", or "Thumbs.db" which should ideally be removed (see these guides on  <a href="https://stackoverflow.com/questions/10924236/mac-zip-compress-without-macosx-folder">Stack Overflow</a> and <a href="https://support.microsoft.com/en-us/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2">Microsoft</a> for how to remove them).</li>
+<li><strong>Use open non-proprietary formats</strong>: Non-properietary formats mean that your files will remain accessible in the future. For guidance on preservation-friendly formats please see the following resources:<ul>
 <li><a href="https://www.dpconline.org/handbook/technical-solutions-and-tools/file-formats-and-standards">Digital Preservation Handbook - File formats and standards</a></li>
 <li><a href="http://www.loc.gov/preservation/resources/rfs/index.html">Library of Congress recommended format specifications</a></li>
 </ul>
@@ -209,7 +213,7 @@
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>Click the <strong><i class="fa fa-trash-o"></i>-icon</strong> to remove an already uploaded file.</p>
+        <p>Click the <strong><i class="fa fa-trash-o"></i> icon</strong> to remove an already uploaded file.</p>
 
         
             <p><img src="finished.png" class="img-thumbnail"></p>
@@ -231,20 +235,64 @@
         <h3 id="pending" class="docs">Pending state <small><a href="#pending" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
-<p>You may experience a file displaying the state <strong>Pending</strong> in the <strong>Progress</strong> column. The pending state means that a file is in progress of being uploaded. It happens e.g.</p>
+<p>You may find that a file is in the <strong>Pending</strong> state the <strong>Progress</strong> column. This means that a file is in process of being uploaded. It happens when:</p>
 <ul>
 <li>If a file is uploaded from a different browser window or by a different user (multiple people can edit a draft)</li>
 <li>If a file upload is broken off and you reload the browser page.</li>
 </ul>
-<p>In the latter case, you can follow the <a href="#remove">remove file</a> to fix the issue.</p>
+<p>In the latter case, <a href="#remove">remove the file</a> to fix the issue.</p>
 <p><img src="pending.png" /></p>
 
 </p>
         <h3 id="modify" class="docs">Modify files after publication <small><a href="#modify" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <p>
-<p>If you would like to modify the files of a record, we recommend that you use our <a href="../manage-versions/">versioning</a> to create a new version of the record.</p>
-<p>We do however offer a one-month grace period after publication in which files can be added, removed or modified. After the one-month grace period we only allow modification in duly justified cases (such as copyright infringements, or exposure of personal data). All requests for modifications must be submitted to our <a href="https://zenodo.org/support">support line</a>, however please consider using our <a href="../manage-versions/">versioning</a> feature instead.</p>
+<p>If you would like to update the files of a record, we recommend that you use <a href="../manage-versions/">versioning</a> to create a new version of the record.</p>
+<p>Instead if you would like to make minor corrections, and you are within 30 days of publishing, you can edit the uploaded files of the record.</p>
+
+</p>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
+    <div class="col-md-11">
+        <p>Open the <strong>Edit files</strong> accordion</p>
+
+        
+            <p><img src="accordion.jpg" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">2</span></p></div>
+    <div class="col-md-11">
+        <p>Click <strong>Edit published files</strong></p>
+
+        
+            <p><img src="accordion-open.jpg" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">3</span></p></div>
+    <div class="col-md-11">
+        <p>Read and complete the <strong>Edit files</strong> modal</p>
+
+        
+            <p><img src="modal.jpg" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <div class="row">
+    <div class="col-md-1"><p><span class="badge">4</span></p></div>
+    <div class="col-md-11">
+        <p>You can now change the files of the record. The draft must be published within 45 days of the original publishing of the record. Publishing the draft will not change the DOI.</p>
+
+        
+            <p><img src="unlocked.jpg" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <p>
+<p>If you are outside of this time period, we only allow modification in duly justified cases (such as copyright infringement or exposure of personal data). All requests for modifications must be submitted to our <a href="https://zenodo.org/support">support line</a>, however please consider restricting the files and/or using our <a href="../manage-versions/">versioning</a> feature instead.</p>
 
 </p>
       </div>
