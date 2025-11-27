@@ -135,6 +135,14 @@
       
       <hr />
       <p>A <code>.zenodo.json</code> file can be added to your GitHub repository to describe the software after it is preserved in Zenodo.</p>
+<p><strong>Note:</strong> If your repository contains both a <code>.zenodo.json</code> and a <code>CITATION.cff</code> file, Zenodo will <strong>only</strong> use the <code>.zenodo.json</code> metadata. The <code>CITATION.cff</code> will be completely ignored for the GitHub release archiving.</p>
+<p><strong>Why use .zenodo.json?</strong> The <code>.zenodo.json</code> format supports Zenodo-specific metadata that <code>CITATION.cff</code> does not yet support, such as:</p>
+<ul>
+<li><strong>Funding information</strong> via the <code>grants</code> field</li>
+<li><strong>Zenodo communities</strong> via the <code>communities</code> field</li>
+<li>Other Zenodo-specific fields like <code>access_right</code>, <code>related_identifiers</code>, and contributor roles</li>
+</ul>
+<p><strong>If you don't need these Zenodo-specific features, a <code>CITATION.cff</code> file alone is sufficient.</strong></p>
 
       
         <h3 id="" class="docs">Create a .zenodo.json file <small><a href="#" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
@@ -224,6 +232,9 @@
     "language": "eng",
     "grants": [
         {"id": "10.13039/501100000780::101122956"}
+    ],
+    "communities": [
+        {"identifier": "simulation-software"}
     ]
 }
 </code></pre>
