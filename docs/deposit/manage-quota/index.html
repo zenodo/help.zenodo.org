@@ -26,11 +26,11 @@
 <meta name="twitter:description" content="Zenodo is a free and open digital archive built by CERN and OpenAIRE, enabling researchers to share and preserve research output in any size, format and from all fields of research." />
 
 <meta name="twitter:image" content="https://blog.zenodo.org/static/img/logos/zenodo-gradient-1000.png" />
-<link rel="stylesheet" href="../../../../static/zenodo.css">
-<link rel="stylesheet" href="../../../../static/style.css">
-<link rel="stylesheet" href="../../../../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../../static/zenodo.css">
+<link rel="stylesheet" href="../../../static/style.css">
+<link rel="stylesheet" href="../../../static/font-awesome/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,100,italic" rel="stylesheet">
-<title>Quota increase | Zenodo</title>
+<title>Manage quota | Zenodo</title>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
@@ -77,16 +77,16 @@
 
 
   
-  <li><a href="../../../../">Help</a></li>
+  <li><a href="../../../">Help</a></li>
 
   
-  <li><a href="../../../../faq/">FAQ</a></li>
+  <li><a href="../../../faq/">FAQ</a></li>
 
   
-  <li class="active"><a href="../../../">Docs</a></li>
+  <li class="active"><a href="../../">Docs</a></li>
 
   
-  <li><a href="../../../../guides/">Guides</a></li>
+  <li><a href="../../../guides/">Guides</a></li>
 
 
           </div>
@@ -104,22 +104,22 @@
     <div class="col-md-4">
         
 <div class="panel panel-default">
-  <div class="panel-heading"><strong><a href="../../">Deposit</a></strong></div>
+  <div class="panel-heading"><strong><a href="../">Deposit</a></strong></div>
   <div class="list-group">
           
-          <a href="../../about-records/" class="list-group-item"">About records</a>
+          <a href="../about-records/" class="list-group-item"">About records</a>
           
-          <a href="../../create-new-upload/" class="list-group-item"">Create new upload</a>
+          <a href="../create-new-upload/" class="list-group-item"">Create new upload</a>
           
-          <a href="../../describe-records/" class="list-group-item"">Describe records</a>
+          <a href="../describe-records/" class="list-group-item"">Describe records</a>
           
-          <a href="../" class="list-group-item active"">Manage files</a>
+          <a href="../manage-files/" class="list-group-item"">Manage files</a>
           
-          <a href="./" class="sub list-group-item highlight">Quota increase</a>
+          <a href="./" class="list-group-item active"">Manage quota</a>
           
-          <a href="../../manage-records/" class="list-group-item"">Manage records</a>
+          <a href="../manage-records/" class="list-group-item"">Manage records</a>
           
-          <a href="../../manage-versions/" class="list-group-item"">Manage versions</a>
+          <a href="../manage-versions/" class="list-group-item"">Manage versions</a>
   </div>
 </div>
 
@@ -127,74 +127,103 @@
     <div class="col-md-8">
       
 <ol class="breadcrumb">
-    <li><a href="../../../">Docs</a></li>
+    <li><a href="../../">Docs</a></li>
     
-    <li><a href="../../">Deposit</a></li>
-    
-    
-    <li><a href="../">Manage files</a></li>
+    <li><a href="../">Deposit</a></li>
     
     
-    <li>Quota increase</li>
-    
+    <li>Manage quota</li>
     
     
 </ol>
 
       <div class="docs-blocks">
-      <h1>Quota increase</h1>
+      <h1>Manage quota</h1>
       
       <hr />
-      <p>We exceptionally grant a <strong>one-time quota increase up to 200GB</strong> for datasets.</p>
+      <p>Each record comes with a default storage quota of <strong>50GB</strong> and you can upload an unlimited number of records under 50GB. For larger files, you also have an additional allowance of up to <strong>150GB</strong> that can be distributed across your uploads as needed.</p>
+<p>You can view detailed information about your quota usage in your <a href="#settings">storage settings</a>.</p>
 
       
-        <h3 id="request" class="docs">Request a quota increase. <small><a href="#request" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+        <h3 id="request" class="docs">Add quota to a draft <small><a href="#request" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
 <hr />
         <div class="row">
     <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>Make sure your request does not exceed 200GB (200.000 MB) and has less than 100 files.</p>
+        <p>Visit the draft, and click on the <strong>Manage storage</strong> button at the top-right of the Files section.</p>
 
+        
+            <p><img src="manage-storage-btn.png" class="img-thumbnail"></p>
         
     </div>
 </div>
         <div class="row">
     <div class="col-md-1"><p><span class="badge">2</span></p></div>
     <div class="col-md-11">
-        <p><a href="../../../get-started/logging-in/">Login to your account</a> and create a new draft record (i.e. don't publish). See <a href="../../create-new-upload/">create a record</a> for details. Please provide as much metadata as possible in particular:</p>
-<ul>
-<li>Title</li>
-<li>Description</li>
-<li>Creators/Authors (with affiliations)</li>
-<li>Related works (in particular peer-reviewed papers)</li>
-<li>License</li>
-<li>Funding information</li>
-</ul>
+        <p>Use the slider or the input field to allocate/deallocate storage quota to the record from your available quota allowance.</p>
 
+        
+            <p><img src="manage-quota-manager.jpg" class="img-thumbnail"></p>
         
     </div>
 </div>
+        <p>
+<p>The bar provides a visual summary of your allocated quota:</p>
+<ul>
+<li><strong>Blue (Default)</strong>: Base storage assigned to each record.</li>
+<li><strong>Green (Additional)</strong>: Extra quota assigned from your allowance.</li>
+<li><strong>Grey (Available)</strong>: Remaining quota not yet allocated.</li>
+</ul>
+
+</p>
         <div class="row">
     <div class="col-md-1"><p><span class="badge">3</span></p></div>
     <div class="col-md-11">
-        <p>Copy the browser URL - should look similar to <code>https://zenodo.org/uploads/1235</code>.</p>
+        <p>Click <strong>Apply</strong> to assign the quota to your record.</p>
 
         
     </div>
 </div>
+        <h3 id="settings" class="docs">Quota overview <small><a href="#settings" class="text-muted"><i class="fa fa-link"></i></a></small></h3>
+<hr />
+        <p>
+<p>The <strong><a href="https://zenodo.org/account/settings/quota/">Quota overview</a></strong> page allows you to see your default quota, additional quota assigned, and quota usage across all your records.</p>
+
+</p>
         <div class="row">
-    <div class="col-md-1"><p><span class="badge">4</span></p></div>
+    <div class="col-md-1"><p><span class="badge">1</span></p></div>
     <div class="col-md-11">
-        <p>Go to our <a href="https://zenodo.org/support">support form</a> and select the category <strong>File upload quota increase</strong>. Please include the following information with your request:</p>
+        <p>Click on the <strong>Storage</strong> option in the user <a href="../../get-started/navigating-zenodo/#profile">Profile menu</a> dropdown</p>
+
+        
+            <p><img src="storage-setting-menu.jpg" class="img-thumbnail"></p>
+        
+    </div>
+</div>
+        <p>
+<p>The <strong>Storage overview</strong> page opens:</p>
+<p><img src="storage-overview.jpg" width="100%"/></p>
+<p>The top section shows an at-a-glance <strong>quota summary</strong> of your storage limits and usage:</p>
 <ul>
-<li>URL that you copied in step 3.</li>
-<li>Total size of your dataset (in GB, not GiB - i.e. 200 GB = 200.000 MB)</li>
-<li>Information (not already provided in the draft metadata) related to the organization, project or grant which was involved in the research, as well as any papers or future papers that will cite this dataset (if applicable).</li>
+<li><strong>Default quota per record:</strong> By default, each record has a quota of <strong>50GB</strong>.</li>
+<li><strong>Available quota:</strong> Remaining additional quota you can assign out of the <strong>150GB</strong> total allowance.</li>
+<li><strong>Quota granted across records:</strong> Total additional quota currently assigned to records.</li>
+</ul>
+<p><img src="quota-overview.png" width="100%"/></p>
+<p>The <strong>quota usage bar</strong> shows how much of your additional quota you have used via file uploads.</p>
+<p><img src="quota-progress-bar.png" width="100%"/></p>
+<p>The <strong>Allocated storage</strong> table lists all your records for which you have assigned additional quota. 
+The columns are:</p>
+<ul>
+<li><strong>Record:</strong> Title and link to the record.</li>
+<li><strong>Additional quota:</strong> Additional quota assigned to this record.</li>
+<li><strong>Usage:</strong> Progress bar showing usage of the total quota.</li>
+<li><strong>Date:</strong> Creation date.</li>
+<li><strong>Status:</strong> Whether it is a draft or published.
+<img src="allocated-storage-table.png" width="100%"/></li>
 </ul>
 
-        
-    </div>
-</div>
+</p>
       </div>
     </div>
     <div class="col-md-12">
